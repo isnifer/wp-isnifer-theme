@@ -1,0 +1,316 @@
+.serif
+  font-family: Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", times, serif
+.monospace
+  font-family: 'courier new', courier, Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace
+.sans
+  font-family: 'Helvetica Neue', helvetica, sans-serif
+
+
+code
+  background-color: #2A410B !important
+  font-family: 'Andale Mono', 'Lucida Console', "courier new", courier, monospace
+  background-color: #069
+  color: #FFF
+  padding: .5em
+  -moz-border-radius: 5px
+  -khtml-border-radius: 5px
+  -webkit-border-radius: 5px
+  border-radius: 5px
+
+pre
+  margin: 1em
+
+  > code
+    line-height: 130%
+    display: block
+    padding: 1em
+    margin: 2em 0
+    overflow: auto
+
+
+.no-bullet
+  list-style-type: none
+  margin-bottom: 2em
+
+  > li
+    margin-bottom: .5em
+
+
+.bullet-list
+  margin: 1em 0 2em 0
+  line-height: 150%
+
+  > li
+    margin: 0 2em 1em 2em
+    list-style-type: square
+
+    > ul
+      margin: .5em 0 1.5em 0
+
+      > li
+        list-style-type: circle
+        margin: 0 2em .5em 2em
+
+
+ul.horiz-list
+  float: left
+  list-style-type: none
+
+  > li
+    float: left
+    display: inline
+
+    > a
+      display: block
+      float: left
+      width: auto
+
+
+ul.link-list
+
+  > li
+    list-style-type: none
+
+    > a
+      display: block
+      background: url(./images/icon_link_arrow.png) 0px 8px no-repeat
+      padding-left: 20px
+      margin-left: 20px
+
+
+ul.pdf-link
+  padding-left: 20px
+  margin-left: 5px
+
+  > li
+    list-style-type: none
+
+    > a
+      display: block
+      background: url(./images/icon_pdf_sm.png) 0 3px no-repeat
+      padding-left: 20px
+      margin-left: 20px
+
+
+.clear-fix
+  display: inline-block
+
+.clear-fix:after
+  content: " "
+  display: block
+  height: 0
+  clear: both
+  font-size: 0
+  visibility: hidden
+
+.clear-all
+  visibility: hidden
+  clear: both
+  margin: 0 !important
+  padding: 0 !important
+  font-size: 0
+  height: 1px
+
+
+img
+
+  &.aligncenter
+    max-width: 100%
+    display: block
+    margin: 5px auto
+
+  &.alignright
+    padding: 4px
+    margin: 0 0 2px 7px
+    display: inline
+    float: right
+
+  &.alignleft
+    padding: 4px 4px 0 0
+    margin: 0 7px 2px 0
+    display: inline
+    float: left
+
+
+.sys
+  text-align: left
+
+.make-link
+  color: #06F !important
+  text-decoration: none
+  margin-bottom: .5em
+
+  &:hover, &:focus, &:active
+    cursor: pointer
+    color: #C60
+    text-decoration: underline
+
+ul.hide
+  margin: 0 0 0 1em !important
+  padding: 0 !important
+
+
+.header-shown
+  background: url('./images/icon_link_plus_minus.png') no-repeat 0 -20px
+  height: 17px
+
+.header-hidden
+  background: url('./images/icon_link_plus_minus.png') no-repeat 0px 3px
+  height: -14px
+
+
+.indicator
+  position: absolute
+  z-index: 100
+  text-align: right
+  left: 0
+
+  > a
+    width: 7em
+    background-color: #FF0
+    display: block
+    font-weight: bold
+    font-size: 12px !important
+    text-transform: uppercase
+    text-decoration: none
+    padding: .5em 1em
+
+    &:link, &:visited
+      color: black
+
+    &:hover, &:focus, &:active
+      color: black
+      background-color: #FFF
+      text-decoration: none
+      cursor: pointer
+
+#js-ind
+  top: 20em
+
+
+.js
+
+  > #js-ind, .hide
+    display: none
+
+html, body
+  height: 100%
+
+  > div.navbar
+    width: 100%
+
+    > div.navbar-inner
+
+      > div.navContainer
+        width: 980px
+        height: 40px
+        margin: 0 auto
+        font-family: 'Lobster'
+
+        > ul.nav
+          margin: 0
+          -webkit-margin-before: 0
+          width: 980px
+          height: 40px
+
+          > a.brand
+            font-family: 'Lobster'
+            margin: 0
+            padding: 8px 0 12px 0
+
+          > li#firstNav
+            margin-left: 98px
+            padding: 0
+
+  > .container
+    min-height: 100%
+    position: relative
+    width: 100%
+    margin: 50px auto 0 auto
+
+    > .header
+      width: 980px
+      margin: 0 auto
+      height: 150px
+      background: url("../img/header.jpg") no-repeat
+      -webkit-border-radius: 5px
+      -moz-border-radius: 5px
+      border-radius: 5px
+
+    > div.content
+      width: 980px
+      margin: 10px auto 0 auto
+      height: auto
+      padding-bottom: 20px
+
+      > section.sidebar
+        float: right
+        margin: 0
+        width: 210px
+        height: auto
+
+        > h2
+          margin: -10px 0 0 0
+          padding: 0
+          font-family: "Lobster", serif
+
+      > section.posts
+        width: 660px
+
+        > article.blogpost
+          width: 660px
+          margin: 20px 0px 20px 0px
+          overflow: auto
+
+          > h1
+            margin: -10px 0 0 0
+            padding: 0
+            font-family: "Lobster", serif
+            font-size: 26px
+
+            > a
+              color: #000
+
+              &:hover
+                border-bottom: 1px dotted #000
+                text-decoration: none
+
+          > h6
+            margin: -4px 0 3px 0
+            padding: 0
+
+          > div.entry
+            width: 660px
+
+            > div.wp-caption
+              background: #f1f1f1
+              line-height: 18px
+              margin-bottom: 20px
+              padding: 4px
+              text-align: center
+              float: left
+              margin: 0 10px 0 0
+
+            > p
+              font-family: Arial, Tahoma, Verdana
+              font-size: 13px
+
+              > a.btn
+                float: right
+
+
+
+
+    > .footer
+      position: absolute
+      bottom: 0
+      margin-top: 10px
+      background: #d6d6d6
+      height: 20px
+      width: 100%
+      text-align: center
+
+      > span.copyright
+        font-family: "PT Sans Narrow"
+        font-size: 12px
+        display: inline-block
