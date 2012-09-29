@@ -5363,7 +5363,7 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > a.brand, body
   padding: 8px 0 12px 0;
 }
 html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav {
-  margin-left: 98px;
+  margin-left: 58px;
   padding: 0;
 }
 html > .container, body > .container {
@@ -5404,7 +5404,7 @@ html > .container > div.content > section.posts, body > .container > div.content
 html > .container > div.content > section.posts > article.blogpost, body > .container > div.content > section.posts > article.blogpost {
   width: 660px;
   margin: 20px 0px 20px 0px;
-  overflow: auto;
+  overflow: hidden;
 }
 html > .container > div.content > section.posts > article.blogpost > h1, body > .container > div.content > section.posts > article.blogpost > h1 {
   margin: -10px 0 0 0;
@@ -5416,7 +5416,6 @@ html > .container > div.content > section.posts > article.blogpost > h1 > a, bod
   color: black;
 }
 html > .container > div.content > section.posts > article.blogpost > h1 > a:hover, body > .container > div.content > section.posts > article.blogpost > h1 > a:hover {
-  border-bottom: 1px dotted black;
   text-decoration: none;
 }
 html > .container > div.content > section.posts > article.blogpost > h6, body > .container > div.content > section.posts > article.blogpost > h6 {
@@ -5439,8 +5438,12 @@ html > .container > div.content > section.posts > article.blogpost > div.entry >
   font-family: Arial, Tahoma, Verdana;
   font-size: 13px;
 }
-html > .container > div.content > section.posts > article.blogpost > div.entry > p > a.btn, body > .container > div.content > section.posts > article.blogpost > div.entry > p > a.btn {
+html > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link, body > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link {
   float: right;
+  text-decoration: none;
+}
+html > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link:hover, body > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link:hover {
+  text-decoration: none;
 }
 html > .container > .footer, body > .container > .footer {
   position: absolute;

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container" xmlns="http://www.w3.org/1999/html">
   <header class="header">
 
   </header>
@@ -14,14 +14,14 @@
     </section>
     <section class="posts">
     	<?php if (have_posts()) : while (have_posts()) : the_post(); //BEGIN: The Loop ?>
-      <article class="blogpost well" id="post-<?php the_ID(); ?>">
+      <article class="blogpost" id="post-<?php the_ID(); ?>">
 
 				<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 				<time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
 				<h6>Автор: <a href="/author/<?php the_author_link() ?>"><?php the_author() ?></a></h6>
 
 				<div class="entry">
-					<?php the_content("Читать далее"); ?>
+					<?php the_content('<button class="btn btn-info">Читать далее</button>'); ?>
 				</div>
 
 			</article>
