@@ -6,6 +6,13 @@
   font-family: 'Helvetica Neue', helvetica, sans-serif
 
 
+a
+  &:link
+    color: #06C
+
+  &:visited
+    color: #743399
+
 code
   background-color: #2A410B !important
   font-family: 'Andale Mono', 'Lucida Console', "courier new", courier, monospace
@@ -33,8 +40,22 @@ pre
   margin-bottom: 2em
 
   > li
-    margin-bottom: .5em
+    color: #888
+    font-size: 12px
+    line-height: 18px
 
+    > span.categories
+      color: #454242
+
+    > a
+      color: #888
+      text-decoration: underline
+
+      &:hover
+        color: #454242
+
+      &:active
+        color: #706E6E
 
 .bullet-list
   margin: 1em 0 2em 0
@@ -194,7 +215,9 @@ ul.hide
     display: none
 
 html, body
-  height: 100%
+  background: url(../img/bg.png) repeat fixed
+  color: #323445
+  min-height: 100%
 
   > div.navbar
     width: 100%
@@ -222,98 +245,176 @@ html, body
             margin-left: 58px
             padding: 0
 
-  > .container
-    min-height: 100%
-    position: relative
-    width: 100%
-    margin: 50px auto 0 auto
+#container
+  position: relative
+  margin: 40px auto 0
+  padding: 10px
+  background: #FFFAFA
+  width: 980px
+  min-height: 100%
 
-    > .header
-      width: 980px
-      margin: 0 auto
-      height: 150px
-      background: url("../img/header.jpg") no-repeat
-      -webkit-border-radius: 5px
-      -moz-border-radius: 5px
-      border-radius: 5px
+#header
+  width: 980px
+  margin: 0 auto
+  height: 150px
+  background: url("../img/header.jpg") no-repeat
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
 
-    > div.content
-      width: 980px
-      margin: 10px auto 0 auto
-      height: auto
-      padding-bottom: 20px
+#content
+  margin: 10px auto 0 auto
+  padding-bottom: 20px
+  width: 980px
+  height: auto
 
-      > section.sidebar
-        float: right
-        margin: 0
-        width: 210px
-        height: auto
+  > section.sidebar
+    float: right
+    margin: 0 10px 0 0
+    width: 210px
+    height: auto
 
-        > h2
+    > h2
+      margin: -10px 0 0 0
+      padding: 0
+      font-family: "PT Sans Narrow", serif
+
+    > div#sidebar
+
+      > ul
+        +reset-ul
+
+        > li
+          +reset-list
+
+        > ul
+          +reset-ul
+
+          > li
+            +reset-list
+
+  > section.posts
+    width: 660px
+    padding-left: 11px
+
+    > div.post-block
+      width: 660px
+      border-bottom: 1px dotted #000
+
+      > article.blogpost
+        width: 660px
+        margin: 20px 0px 20px 0px
+        overflow: hidden
+
+        > h1
           margin: -10px 0 0 0
           padding: 0
-          font-family: "Lobster", serif
+          font-family: "PT Sans Narrow", sans-serif
+          font-size: 26px
 
-      > section.posts
-        width: 660px
+          > a
+            color: #000
+            text-shadow: 1px 1px 1px #000
 
-        > article.blogpost
-          width: 660px
-          margin: 20px 0px 20px 0px
-          overflow: hidden
+            &:hover
+              text-shadow: 2px 2px 3px #55565C
+              text-decoration: none
 
-          > h1
-            margin: -10px 0 0 0
-            padding: 0
-            font-family: "Lobster", serif
-            font-size: 26px
+            &:active
+              text-shadow: 1px 1px 1px #000
+
+        > div.entry-meta
+          color: #7D7D7D
+          padding: 5px 0 10px
+
+          > time, span
 
             > a
-              color: #000
+              color: #888
+              text-decoration: underline
 
               &:hover
-                text-decoration: none
+                color: #454242
 
-          > h6
-            margin: -4px 0 3px 0
-            padding: 0
+              &:active
+                color: #706E6E
 
-          > div.entry
-            width: 660px
+        > div.wp-caption
+          background: #f1f1f1
+          line-height: 18px
+          padding: 8px 5px 0
+          text-align: center
+          float: left
+          margin: 0 10px 10px 0
 
-            > div.wp-caption
-              background: #f1f1f1
-              line-height: 18px
-              margin-bottom: 20px
-              padding: 4px
-              text-align: center
-              float: left
-              margin: 0 10px 0 0
+        > p
+          font-family: Georgia, "PT Sans Narrow", Arial
+          font-size: 16px
+          line-height: 24px
 
-            > p
-              font-family: Arial, Tahoma, Verdana
-              font-size: 13px
+          > a.more-link
+            float: right
+            text-decoration: none
 
-              > a.more-link
-                float: right
-                text-decoration: none
-
-                &:hover
-                  text-decoration: none
+            &:hover
+              text-decoration: none
 
 
+  > div.pagination
+    margin: 10px 0 0 10px
+
+    > span.pages
+      border-left-width: 1px
+      border-top-left-radius: 5px
+      border-bottom-left-radius: 5px
+
+    > a, span
+      color: white
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+      background-color: #49afcd
+      background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4)
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4))
+      background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4)
+      background-image: -o-linear-gradient(top, #5bc0de, #2f96b4)
+      background-image: linear-gradient(to bottom, #5bc0de, #2f96b4)
+      background-repeat: repeat-x
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0)
+      border-color: #2f96b4 #2f96b4 #1f6377
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%)
+      *background-color: #2f96b4
+        /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+
+      &:hover
+        color: white
+        background-color: #2f96b4
+        background-position: 0 -15px
+        -webkit-transition: background-position 0.1s linear
+        -moz-transition: background-position 0.1s linear
+        -o-transition: background-position 0.1s linear
+        transition: background-position 0.1s linear
+
+      &:active, &.current
+        background-color: #24748c \9
+        -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05)
+        -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05)
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05)
+
+    > a.next
+      border-top-right-radius: 5px
+      border-bottom-right-radius: 5px
 
 
-    > .footer
-      position: absolute
-      bottom: 0
-      margin-top: 10px
-      background: #d6d6d6
-      height: 20px
-      width: 100%
-      text-align: center
+#footer
+  position: absolute
+  bottom: 0
+  margin: 10px 0 0 -10px
+  background: #d6d6d6
+  height: 21px
+  width: 1000px
+  text-align: center
 
-      > span.copyright
-        font-family: "PT Sans Narrow"
-        font-size: 12px
-        display: inline-block
+  > span.copyright
+    font-family: "PT Sans Narrow"
+    font-size: 12px
+    display: inline-block

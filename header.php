@@ -57,8 +57,8 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 	<!--END: Open Graph facebook tags-->
 
 	<!-- favicon & other link Tags -->
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="/images/custom_icon.png"/><!-- 114x114 icon for iphones and ipads -->
 	<link rel="copyright" href="#copyright" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
@@ -84,6 +84,9 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
   <script type="text/javascript">
     $(document).ready(function(){
       $('.dropdown-toggle').dropdown();
+      $('a[href="#top-header"]').click(function(){
+        $(window).animate();
+      })
     })
   </script>
 
@@ -91,7 +94,7 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 
 <body id="<?php $post_parent = get_post($post->post_parent); $parentSlug = $post_parent->post_name; if (is_category()) { echo "category-template"; } elseif (is_archive()) { echo "archive-template"; } elseif (is_search()) { echo "search-results"; } elseif (is_tag()) { echo "tag-template"; } else { echo $parentSlug; } ?>" class="<?php global $wp_query; $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true ); $tn = str_replace(".php", "", $template_name); echo "template-".$tn." "; ?><?php if (is_category()) { echo 'category'; } elseif (is_search()) { echo 'search'; } elseif (is_tag()) { echo "tag"; } elseif (is_home()) { echo "home"; } elseif (is_404()) { echo "page404"; } else { echo $post->post_name; } ?>">
 
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar navbar-fixed-top" id="top-header">
     <div class="navbar-inner">
       <div class="navContainer">
         <ul class="nav nav-pulls">

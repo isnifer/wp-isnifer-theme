@@ -209,41 +209,25 @@ END commenting, remove this line to uncomment */
 // some other good reading for learning about editing the admin area here
 // http://sixrevisions.com/wordpress/how-to-customize-the-wordpress-admin-area/
 
-function kriesi_pagination($pages = '', $range = 2)
-{
-     $showitems = ($range * 2)+1;
+function wp_corenavi() {
+  global $wp_query, $wp_rewrite;
+  $pages = '';
+  $max = $wp_query->max_num_pages;
+  if (!$current = get_query_var('paged')) $current = 1;
+  $a['base'] = str_replace(999999999, '%#%', get_pagenum_link(999999999));
+  $a['total'] = $max;
+  $a['current'] = $current;
 
-     global $paged;
-     if(empty($paged)) $paged = 1;
+  $total = 1; //1 - выводить текст "Страница N из N", 0 - не выводить
+  $a['mid_size'] = 1; //сколько ссылок показывать слева и справа от текущей
+  $a['end_size'] = 1; //сколько ссылок показывать в начале и в конце
+  $a['prev_text'] = '&laquo;'; //текст ссылки "Предыдущая страница"
+  $a['next_text'] = '&raquo;'; //текст ссылки "Следующая страница"
 
-     if($pages == '')
-     {
-         global $wp_query;
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }
-
-     if(1 != $pages)
-     {
-         echo "<div class='pagination'>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
-
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
-                 echo ($paged == $i)? "<li class='active'><a>".$i."</a></li>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
-             }
-         }
-
-         if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a>";
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
-         echo "</div>\n";
-     }
+  if ($max > 1) echo '<div class="pagination">';
+    if ($total == 1 && $max > 1) $pages = '<span class="pages">Страница ' . $current . ' из ' . $max . '</span>'."\r\n";
+    echo $pages . paginate_links($a);
+    if ($max > 1) echo '</div>';
 }
 
 ?>

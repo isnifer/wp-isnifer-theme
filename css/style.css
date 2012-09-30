@@ -5150,6 +5150,13 @@ a.label:hover, a.badge:hover {
   font-family: "Helvetica Neue", helvetica, sans-serif;
 }
 
+a:link {
+  color: #0066cc;
+}
+a:visited {
+  color: #743399;
+}
+
 code {
   background-color: #2a410b !important;
   font-family: "Andale Mono", "Lucida Console", "courier new", courier, monospace;
@@ -5178,7 +5185,22 @@ pre > code {
   margin-bottom: 2em;
 }
 .no-bullet > li {
-  margin-bottom: 0.5em;
+  color: #888888;
+  font-size: 12px;
+  line-height: 18px;
+}
+.no-bullet > li > span.categories {
+  color: #454242;
+}
+.no-bullet > li > a {
+  color: #888888;
+  text-decoration: underline;
+}
+.no-bullet > li > a:hover {
+  color: #454242;
+}
+.no-bullet > li > a:active {
+  color: #706e6e;
 }
 
 .bullet-list {
@@ -5340,7 +5362,9 @@ ul.hide {
 }
 
 html, body {
-  height: 100%;
+  background: url(../img/bg.png) repeat fixed;
+  color: #323445;
+  min-height: 100%;
 }
 html > div.navbar, body > div.navbar {
   width: 100%;
@@ -5366,13 +5390,17 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav, 
   margin-left: 58px;
   padding: 0;
 }
-html > .container, body > .container {
-  min-height: 100%;
+
+#container {
   position: relative;
-  width: 100%;
-  margin: 50px auto 0 auto;
+  margin: 40px auto 0;
+  padding: 10px;
+  background: #fffafa;
+  width: 980px;
+  min-height: 100%;
 }
-html > .container > .header, body > .container > .header {
+
+#header {
   width: 980px;
   margin: 0 auto;
   height: 150px;
@@ -5381,80 +5409,167 @@ html > .container > .header, body > .container > .header {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-html > .container > div.content, body > .container > div.content {
-  width: 980px;
+
+#content {
   margin: 10px auto 0 auto;
-  height: auto;
   padding-bottom: 20px;
+  width: 980px;
+  height: auto;
 }
-html > .container > div.content > section.sidebar, body > .container > div.content > section.sidebar {
+#content > section.sidebar {
   float: right;
-  margin: 0;
+  margin: 0 10px 0 0;
   width: 210px;
   height: auto;
 }
-html > .container > div.content > section.sidebar > h2, body > .container > div.content > section.sidebar > h2 {
+#content > section.sidebar > h2 {
   margin: -10px 0 0 0;
   padding: 0;
-  font-family: "Lobster", serif;
+  font-family: "PT Sans Narrow", serif;
 }
-html > .container > div.content > section.posts, body > .container > div.content > section.posts {
+#content > section.sidebar > div#sidebar > ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+#content > section.sidebar > div#sidebar > ul > li {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+#content > section.sidebar > div#sidebar > ul > ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+#content > section.sidebar > div#sidebar > ul > ul > li {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+#content > section.posts {
   width: 660px;
+  padding-left: 11px;
 }
-html > .container > div.content > section.posts > article.blogpost, body > .container > div.content > section.posts > article.blogpost {
+#content > section.posts > div.post-block {
+  width: 660px;
+  border-bottom: 1px dotted black;
+}
+#content > section.posts > div.post-block > article.blogpost {
   width: 660px;
   margin: 20px 0px 20px 0px;
   overflow: hidden;
 }
-html > .container > div.content > section.posts > article.blogpost > h1, body > .container > div.content > section.posts > article.blogpost > h1 {
+#content > section.posts > div.post-block > article.blogpost > h1 {
   margin: -10px 0 0 0;
   padding: 0;
-  font-family: "Lobster", serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 26px;
 }
-html > .container > div.content > section.posts > article.blogpost > h1 > a, body > .container > div.content > section.posts > article.blogpost > h1 > a {
+#content > section.posts > div.post-block > article.blogpost > h1 > a {
   color: black;
+  text-shadow: 1px 1px 1px black;
 }
-html > .container > div.content > section.posts > article.blogpost > h1 > a:hover, body > .container > div.content > section.posts > article.blogpost > h1 > a:hover {
+#content > section.posts > div.post-block > article.blogpost > h1 > a:hover {
+  text-shadow: 2px 2px 3px #55565c;
   text-decoration: none;
 }
-html > .container > div.content > section.posts > article.blogpost > h6, body > .container > div.content > section.posts > article.blogpost > h6 {
-  margin: -4px 0 3px 0;
-  padding: 0;
+#content > section.posts > div.post-block > article.blogpost > h1 > a:active {
+  text-shadow: 1px 1px 1px black;
 }
-html > .container > div.content > section.posts > article.blogpost > div.entry, body > .container > div.content > section.posts > article.blogpost > div.entry {
-  width: 660px;
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta {
+  color: #7d7d7d;
+  padding: 5px 0 10px;
 }
-html > .container > div.content > section.posts > article.blogpost > div.entry > div.wp-caption, body > .container > div.content > section.posts > article.blogpost > div.entry > div.wp-caption {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a {
+  color: #888888;
+  text-decoration: underline;
+}
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:hover, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:hover {
+  color: #454242;
+}
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:active, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:active {
+  color: #706e6e;
+}
+#content > section.posts > div.post-block > article.blogpost > div.wp-caption {
   background: #f1f1f1;
   line-height: 18px;
-  margin-bottom: 20px;
-  padding: 4px;
+  padding: 8px 5px 0;
   text-align: center;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 10px 10px 0;
 }
-html > .container > div.content > section.posts > article.blogpost > div.entry > p, body > .container > div.content > section.posts > article.blogpost > div.entry > p {
-  font-family: Arial, Tahoma, Verdana;
-  font-size: 13px;
+#content > section.posts > div.post-block > article.blogpost > p {
+  font-family: Georgia, "PT Sans Narrow", Arial;
+  font-size: 16px;
+  line-height: 24px;
 }
-html > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link, body > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link {
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link {
   float: right;
   text-decoration: none;
 }
-html > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link:hover, body > .container > div.content > section.posts > article.blogpost > div.entry > p > a.more-link:hover {
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link:hover {
   text-decoration: none;
 }
-html > .container > .footer, body > .container > .footer {
+#content > div.pagination {
+  margin: 10px 0 0 10px;
+}
+#content > div.pagination > span.pages {
+  border-left-width: 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#content > div.pagination > a, #content > div.pagination span {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+#content > div.pagination > a:hover, #content > div.pagination span:hover {
+  color: white;
+  background-color: #2f96b4;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+#content > div.pagination > a:active, #content > div.pagination > a.current, #content > div.pagination span:active, #content > div.pagination span.current {
+  background-color: #24748c \9;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+#content > div.pagination > a.next {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#footer {
   position: absolute;
   bottom: 0;
-  margin-top: 10px;
+  margin: 10px 0 0 -10px;
   background: #d6d6d6;
-  height: 20px;
-  width: 100%;
+  height: 21px;
+  width: 1000px;
   text-align: center;
 }
-html > .container > .footer > span.copyright, body > .container > .footer > span.copyright {
+#footer > span.copyright {
   font-family: "PT Sans Narrow";
   font-size: 12px;
   display: inline-block;
