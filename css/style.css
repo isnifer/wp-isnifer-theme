@@ -5362,7 +5362,7 @@ ul.hide {
 }
 
 html, body {
-  background: url(../img/bg.png) repeat fixed;
+  background: white;
   color: #323445;
   min-height: 100%;
 }
@@ -5370,7 +5370,7 @@ html > div.navbar, body > div.navbar {
   width: 100%;
 }
 html > div.navbar > div.navbar-inner > div.navContainer, body > div.navbar > div.navbar-inner > div.navContainer {
-  width: 980px;
+  width: 1200px;
   height: 40px;
   margin: 0 auto;
   font-family: "Lobster";
@@ -5378,33 +5378,33 @@ html > div.navbar > div.navbar-inner > div.navContainer, body > div.navbar > div
 html > div.navbar > div.navbar-inner > div.navContainer > ul.nav, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav {
   margin: 0;
   -webkit-margin-before: 0;
-  width: 980px;
+  width: 1200px;
   height: 40px;
 }
 html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > a.brand, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav > a.brand {
-  font-family: "Lobster";
   margin: 0;
   padding: 8px 0 12px 0;
+  font-family: "Lobster";
+  width: 50%;
 }
-html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav {
-  margin-left: 58px;
-  padding: 0;
+html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-search, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-search {
+  float: right;
 }
 
 #container {
   position: relative;
   margin: 40px auto 0;
   padding: 10px;
-  background: #fffafa;
-  width: 980px;
+  background: white;
+  width: 1200px;
   min-height: 100%;
 }
 
 #header {
-  width: 980px;
+  width: 100%;
   margin: 0 auto;
   height: 150px;
-  background: url("../img/header.jpg") no-repeat;
+  background: url("http://lorempixel.com/1200/150/people") no-repeat;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5413,7 +5413,7 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav, 
 #content {
   margin: 10px auto 0 auto;
   padding-bottom: 20px;
-  width: 980px;
+  width: 100%;
   height: auto;
 }
 #content > section.sidebar {
@@ -5452,15 +5452,15 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav, 
   padding: 0;
 }
 #content > section.posts {
-  width: 660px;
+  width: 85%;
   padding-left: 11px;
 }
 #content > section.posts > div.post-block {
-  width: 660px;
+  width: inherit;
   border-bottom: 1px dotted black;
 }
 #content > section.posts > div.post-block > article.blogpost {
-  width: 660px;
+  width: inherit;
   margin: 20px 0px 20px 0px;
   overflow: hidden;
 }
@@ -5566,7 +5566,7 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav, 
   margin: 10px 0 0 -10px;
   background: #d6d6d6;
   height: 21px;
-  width: 1000px;
+  width: 1200px;
   text-align: center;
 }
 #footer > span.copyright {
@@ -5575,6 +5575,80 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > li#firstNav, 
   display: inline-block;
 }
 
+@media (max-width: 1200px) {
+  #container, #header, #content, #footer {
+    width: 1150px;
+  }
+}
+@media (max-width: 1150px) {
+  #container, #header, #content, #footer {
+    width: 1090px;
+  }
+}
+@media (max-width: 1100px) {
+  #container, #header, #content, #footer {
+    width: 990px;
+  }
+}
+@media (max-width: 1000px) {
+  #container, #header, #content, #footer {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  #container, #header, #content, #footer {
+    width: 700px;
+  }
+
+  #content > section.posts {
+    width: 97%;
+  }
+
+  section.sidebar {
+    display: none;
+  }
+
+  ul.nav {
+    width: 700px;
+    height: 40px;
+  }
+  ul.nav > a.brand {
+    margin: 0 0 0 10px;
+    padding: 8px 0 12px 0;
+    font-family: "Lobster";
+    width: 60%;
+  }
+  ul.nav > li {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  img {
+    display: none;
+  }
+
+  html, body {
+    font: 12px Arial;
+  }
+
+  html, body, #container, #header, #content, #footer {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  #content > section.posts {
+    width: inherit;
+    padding: 0;
+  }
+  #content > section.posts > div.post-block {
+    width: inherit;
+    padding: 0;
+  }
+  #content > section.posts > div.post-block > article.blogpost {
+    width: inherit;
+    padding: 0;
+  }
+}
 section.modal {
   display: none;
 }

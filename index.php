@@ -7,10 +7,10 @@
   <div id="content">
     <section class="sidebar well">
       <h2 class="pagination-centered">Sidebar</h2>
-      <a href="#" class="thumbnail"><img src="http://placehold.it/200x300" alt=""></a>
-      <a href="#" class="thumbnail"><img src="http://placehold.it/200x300" alt=""></a>
-      <a href="#" class="thumbnail"><img src="http://placehold.it/200x300" alt=""></a>
-      <a href="#" class="thumbnail"><img src="http://placehold.it/200x300" alt=""></a>
+      <a href="#" class="thumbnail"><img src="http://lorempixel.com/200/300/people" alt=""></a>
+      <a href="#" class="thumbnail"><img src="http://lorempixel.com/200/300/transport" alt=""></a>
+      <a href="#" class="thumbnail"><img src="http://lorempixel.com/200/300/nature" alt=""></a>
+      <a href="#" class="thumbnail"><img src="http://lorempixel.com/200/300/sports" alt=""></a>
     </section>
     <section class="posts">
     	<?php if (have_posts()) : while (have_posts()) : the_post(); //BEGIN: The Loop ?>
