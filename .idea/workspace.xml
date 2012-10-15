@@ -2,7 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84b28b29-6108-40db-98f0-129870f07146" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_accordion.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_alerts.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_breadcrumbs.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_button-groups.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_buttons.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_carousel.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_close.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_code.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_component-animations.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_dropdowns.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_forms.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_grid.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_hero-unit.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_labels-badges.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_mixins.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_modals.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_navbar.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_navs.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_pager.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_pagination.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_popovers.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_progress-bars.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_reset.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_scaffolding.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_sprites.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_tables.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_thumbnails.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_tooltip.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_type.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_utilities.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_variables.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_wells.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_bootstrap.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_mixins.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_structure.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_variables.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/style.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/dia-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/patt-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0800294c257feb9eb3ca2a8cf8784f459f790b6c/_layouts.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_fonts.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_globals.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_libs.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_modals.sassc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/2f51bf8f83557b54749ff88bd624c598369c695a/_pages.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_structure.sass" afterPath="$PROJECT_DIR$/sass/_structure.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/single.php" afterPath="$PROJECT_DIR$/single.php" />
     </list>
     <list id="e83a853f-1bec-48b2-bdea-846a3e1008aa" name="Rejected commit: Default" comment="Base files added" />
     <ignored path="BymeV2.iws" />
@@ -22,22 +73,31 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.1539548">
+    <splitter split-orientation="horizontal" split-proportion="0.45572755">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="0.057692308">
+                <state line="15" column="10" selection-start="380" selection-end="380" vertical-scroll-proportion="-9.807693">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/footer.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/header.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="59" selection-start="2645" selection-end="2645" vertical-scroll-proportion="-8.576923">
+                <state line="75" column="21" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.018478261">
                   <folding />
                 </state>
               </provider>
@@ -47,24 +107,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_structure.sass" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sass/_structure.sass">
+          <file leaf-file-name="single.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/single.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="441" column="13" selection-start="8698" selection-end="8698" vertical-scroll-proportion="0.49281767">
+                <state line="28" column="56" selection-start="923" selection-end="923" vertical-scroll-proportion="-5.9615383">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/style.css">
+          <file leaf-file-name="_structure.sass" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sass/_structure.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5641" column="0" selection-start="123549" selection-end="123549" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <marker date="1350053132479" expanded="true" signature="116914:116916" placeholder="{...}" />
-                    <marker date="1350053132479" expanded="true" signature="122912:123285" placeholder="{...}" />
-                    <marker date="1350053132479" expanded="true" signature="123312:123745" placeholder="{...}" />
-                  </folding>
+                <state line="536" column="59" selection-start="11366" selection-end="11366" vertical-scroll-proportion="0.6374207">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -90,20 +146,22 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/sass/_bootstrap.sass" />
-        <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/single.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/single.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/sidebar.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/sass/_structure.sass" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="987" />
-    <option name="width" value="933" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -131,6 +189,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,17 +238,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="options.lastSelected" value="preferences.fileTypes" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../tourportal.dev" />
-    <property name="options.searchVisible" value="true" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -239,7 +297,11 @@
       <created>1350053227666</created>
       <updated>1350053227666</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Последние пару часов игрался с Media Queries :) Пока слабо проработано, но прикольно!)">
+      <created>1350053290342</created>
+      <updated>1350053290342</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -263,14 +325,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="987" y="0" width="933" height="1050" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22028354" sideWeight="0.5025295" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15885417" sideWeight="0.5025295" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.4973939" order="7" side_tool="true" content_ui="tabs" />
@@ -280,6 +341,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4974705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -320,7 +382,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some fixes with blogpost, Added button for Read later" />
+    <option name="LAST_COMMIT_MESSAGE" value="Последние пару часов игрался с Media Queries :) Пока слабо проработано, но прикольно!)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -336,18 +398,12 @@
     <MESSAGE value="Base files added" />
     <MESSAGE value="Change Bootstrap Version to latest" />
     <MESSAGE value="Some fixes with blogpost, Added button for Read later" />
+    <MESSAGE value="Последние пару часов игрался с Media Queries :) Пока слабо проработано, но прикольно!)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/_structure.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="26" selection-start="4533" selection-end="4533" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="12" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
@@ -385,54 +441,54 @@
         <state line="70" column="27" selection-start="1606" selection-end="1606" vertical-scroll-proportion="2.0950704" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="221" column="20" selection-start="9656" selection-end="9656" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5641" column="0" selection-start="123549" selection-end="123549" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1350053132479" expanded="true" signature="116914:116916" placeholder="{...}" />
-            <marker date="1350053132479" expanded="true" signature="122912:123285" placeholder="{...}" />
-            <marker date="1350053132479" expanded="true" signature="123312:123745" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="40" column="19" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-26.153847" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
+    <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="59" selection-start="2645" selection-end="2645" vertical-scroll-proportion="-8.576923">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="0.057692308">
+        <state line="15" column="10" selection-start="380" selection-end="380" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5772" column="0" selection-start="129083" selection-end="129083" vertical-scroll-proportion="1.7071881">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="56" selection-start="923" selection-end="923" vertical-scroll-proportion="-5.9615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="21" selection-start="3451" selection-end="3451" vertical-scroll-proportion="0.018478261">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_structure.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="441" column="13" selection-start="8698" selection-end="8698" vertical-scroll-proportion="0.49281767">
+        <state line="536" column="59" selection-start="11366" selection-end="11366" vertical-scroll-proportion="0.6374207">
           <folding />
         </state>
       </provider>

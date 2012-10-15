@@ -5150,6 +5150,10 @@ a.label:hover, a.badge:hover {
   font-family: "Helvetica Neue", helvetica, sans-serif;
 }
 
+p::selection, h1::selection, h2::selection, h3::selection, span::selection, a::selection, b::selection, i::selection, img::selection, div::selection, ul::selection, li::selection, label::selection, article::selection, section::selection, time::selection, header::selection, footer::selection {
+  background: yellow;
+}
+
 a:link {
   color: #0066cc;
 }
@@ -5258,7 +5262,7 @@ ul.pdf-link > li > a {
 }
 
 .clear-fix {
-  display: inline-block;
+  clear: both;
 }
 
 .clear-fix:after {
@@ -5362,40 +5366,76 @@ ul.hide {
 }
 
 html, body {
-  background: white;
+  background: white url(../img/bg.png) repeat;
   color: #323445;
+  min-width: 640px;
   min-height: 100%;
 }
-html > div.navbar, body > div.navbar {
+html > div.navbar-top, body > div.navbar-top {
+  overflow: visible;
+  color: #555555;
+  *position: relative;
+  *z-index: 2;
+  background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(top, white, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
+  background-image: -o-linear-gradient(top, white, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0);
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  min-height: 40px;
   width: 100%;
 }
-html > div.navbar > div.navbar-inner > div.navContainer, body > div.navbar > div.navbar-inner > div.navContainer {
+html > div.navbar-top > div.navbar-container, body > div.navbar-top > div.navbar-container {
   width: 1200px;
   height: 40px;
   margin: 0 auto;
   font-family: "Lobster";
 }
-html > div.navbar > div.navbar-inner > div.navContainer > ul.nav, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav {
-  margin: 0;
+html > div.navbar-top > div.navbar-container > ul.nav, body > div.navbar-top > div.navbar-container > ul.nav {
+  margin: 0 auto;
+  float: none;
   -webkit-margin-before: 0;
-  width: 1200px;
+  width: inherit;
   height: 40px;
 }
-html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > a.brand, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav > a.brand {
+html > div.navbar-top > div.navbar-container > ul.nav > a.brand, body > div.navbar-top > div.navbar-container > ul.nav > a.brand {
   margin: 0;
   padding: 8px 0 12px 0;
   font-family: "Lobster";
-  width: 50%;
+  width: 360px;
+  float: left;
+  font-size: 20px;
+  color: black;
+  margin-right: 320px;
 }
-html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-search, body > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-search {
+html > div.navbar-top > div.navbar-container > ul.nav > li, body > div.navbar-top > div.navbar-container > ul.nav > li {
+  float: left;
+  margin: 8px 5px 0 0;
+  font-size: 16px;
+}
+html > div.navbar-top > div.navbar-container > ul.nav > li > a, body > div.navbar-top > div.navbar-container > ul.nav > li > a {
+  color: black;
+}
+html > div.navbar-top > div.navbar-container > ul.nav > li > a > b.caret, body > div.navbar-top > div.navbar-container > ul.nav > li > a > b.caret {
+  border-top-color: black;
+  border-bottom-color: black;
+  margin-top: 8px;
+}
+html > div.navbar-top > div.navbar-container > form.navbar-search, body > div.navbar-top > div.navbar-container > form.navbar-search {
   float: right;
+  margin-top: -35px;
 }
 
 #container {
   position: relative;
   margin: 40px auto 0;
   padding: 10px;
-  background: white;
+  background: transparent;
   width: 1200px;
   min-height: 100%;
 }
@@ -5411,7 +5451,7 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-s
 }
 
 #content {
-  margin: 10px auto 0 auto;
+  margin: 20px auto 0 auto;
   padding-bottom: 20px;
   width: 100%;
   height: auto;
@@ -5419,6 +5459,10 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-s
 #content > section.sidebar {
   float: right;
   margin: 0 10px 0 0;
+  padding: 19px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   width: 210px;
   height: auto;
 }
@@ -5452,50 +5496,55 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-s
   padding: 0;
 }
 #content > section.posts {
-  width: 85%;
+  float: left;
   padding-left: 11px;
+  width: 70%;
 }
-#content > section.posts > div.post-block {
-  width: inherit;
-  border-bottom: 1px dotted black;
+#content > section.posts > div.post-block, #content > section.posts article.post {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
-#content > section.posts > div.post-block > article.blogpost {
-  width: inherit;
+#content > section.posts > div.post-block > article.blogpost, #content > section.posts article.post > article.blogpost {
+  width: 100%;
   margin: 20px 0px 20px 0px;
   overflow: hidden;
 }
-#content > section.posts > div.post-block > article.blogpost > h1 {
+#content > section.posts > div.post-block > article.blogpost > h1, #content > section.posts article.post > article.blogpost > h1 {
   margin: -10px 0 0 0;
   padding: 0;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 26px;
 }
-#content > section.posts > div.post-block > article.blogpost > h1 > a {
+#content > section.posts > div.post-block > article.blogpost > h1 > a, #content > section.posts article.post > article.blogpost > h1 > a {
   color: black;
   text-shadow: 1px 1px 1px black;
 }
-#content > section.posts > div.post-block > article.blogpost > h1 > a:hover {
+#content > section.posts > div.post-block > article.blogpost > h1 > a:hover, #content > section.posts article.post > article.blogpost > h1 > a:hover {
   text-shadow: 2px 2px 3px #55565c;
   text-decoration: none;
 }
-#content > section.posts > div.post-block > article.blogpost > h1 > a:active {
+#content > section.posts > div.post-block > article.blogpost > h1 > a:active, #content > section.posts article.post > article.blogpost > h1 > a:active {
   text-shadow: 1px 1px 1px black;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta, #content > section.posts article.post > article.blogpost > div.entry-meta {
   color: #7d7d7d;
   padding: 5px 0 10px;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a, #content > section.posts article.post > article.blogpost > div.entry-meta > time > a, #content > section.posts article.post > article.blogpost > div.entry-meta span > a {
   color: #888888;
   text-decoration: underline;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:hover, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:hover {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:hover, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:hover, #content > section.posts article.post > article.blogpost > div.entry-meta > time > a:hover, #content > section.posts article.post > article.blogpost > div.entry-meta span > a:hover {
   color: #454242;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:active, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:active {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:active, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:active, #content > section.posts article.post > article.blogpost > div.entry-meta > time > a:active, #content > section.posts article.post > article.blogpost > div.entry-meta span > a:active {
   color: #706e6e;
 }
-#content > section.posts > div.post-block > article.blogpost > div.wp-caption {
+#content > section.posts > div.post-block > article.blogpost > div.wp-caption, #content > section.posts article.post > article.blogpost > div.wp-caption {
   background: #f1f1f1;
   line-height: 18px;
   padding: 8px 5px 0;
@@ -5503,16 +5552,66 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-s
   float: left;
   margin: 0 10px 10px 0;
 }
-#content > section.posts > div.post-block > article.blogpost > p {
+#content > section.posts > div.post-block > article.blogpost > p, #content > section.posts article.post > article.blogpost > p {
   font-family: Georgia, "PT Sans Narrow", Arial;
   font-size: 16px;
   line-height: 24px;
 }
-#content > section.posts > div.post-block > article.blogpost > p > a.more-link {
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link, #content > section.posts article.post > article.blogpost > p > a.more-link {
   float: right;
   text-decoration: none;
 }
-#content > section.posts > div.post-block > article.blogpost > p > a.more-link:hover {
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link:hover, #content > section.posts article.post > article.blogpost > p > a.more-link:hover {
+  text-decoration: none;
+}
+#content > section.posts > article.post {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#content > section.posts > article.post > header > h1 {
+  margin: -10px 0 0 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 30px;
+}
+#content > section.posts > article.post > header > time, #content > section.posts > article.post > header span {
+  color: #888888;
+}
+#content > section.posts > article.post > header > time > a, #content > section.posts > article.post > header span > a {
+  color: #888888;
+  text-decoration: underline;
+}
+#content > section.posts > article.post > header > time > a:hover, #content > section.posts > article.post > header span > a:hover {
+  color: #454242;
+}
+#content > section.posts > article.post > header > time > a:active, #content > section.posts > article.post > header span > a:active {
+  color: #706e6e;
+}
+#content > section.posts > article.post > div.entry {
+  margin-top: 10px;
+}
+#content > section.posts > article.post > div.entry > div.wp-caption {
+  background: #f1f1f1;
+  line-height: 18px;
+  padding: 8px 5px 0;
+  text-align: center;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+#content > section.posts > article.post > div.entry > p {
+  font-family: Georgia, "PT Sans Narrow", Arial;
+  font-size: 16px;
+  line-height: 24px;
+}
+#content > section.posts > article.post > div.entry > p > a.more-link {
+  float: right;
+  text-decoration: none;
+}
+#content > section.posts > article.post > div.entry > p > a.more-link:hover {
   text-decoration: none;
 }
 #content > div.pagination {
@@ -5576,32 +5675,40 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-s
 }
 
 @media (max-width: 1200px) {
-  #container, #header, #content, #footer {
-    width: 1150px;
+  #container, #header, #content, #footer, .navbar-container {
+    width: 95%;
   }
 }
 @media (max-width: 1150px) {
-  #container, #header, #content, #footer {
-    width: 1090px;
+  #container, #header, #content, #footer, .navbar-container {
+    width: 95%;
   }
 }
 @media (max-width: 1100px) {
-  #container, #header, #content, #footer {
-    width: 990px;
+  #container, #header, #content, #footer, .navbar-container {
+    width: 95%;
+  }
+
+  #content > section.posts {
+    width: 63%;
   }
 }
 @media (max-width: 1000px) {
   #container, #header, #content, #footer {
-    width: 768px;
+    width: 95%;
+  }
+
+  #content > section.posts {
+    width: 55%;
   }
 }
 @media (max-width: 768px) {
   #container, #header, #content, #footer {
-    width: 700px;
+    width: 95%;
   }
 
   #content > section.posts {
-    width: 97%;
+    width: 90%;
   }
 
   section.sidebar {
@@ -5609,14 +5716,14 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-s
   }
 
   ul.nav {
-    width: 700px;
+    width: 50%;
     height: 40px;
   }
   ul.nav > a.brand {
     margin: 0 0 0 10px;
     padding: 8px 0 12px 0;
     font-family: "Lobster";
-    width: 60%;
+    width: 30%;
   }
   ul.nav > li {
     display: none;
@@ -5631,22 +5738,17 @@ html > div.navbar > div.navbar-inner > div.navContainer > ul.nav > form.navbar-s
     font: 12px Arial;
   }
 
-  html, body, #container, #header, #content, #footer {
-    width: 97%;
-    margin: 0 auto;
+  #container, #header, #content, #footer {
+    width: 94%;
   }
 
   #content > section.posts {
-    width: inherit;
-    padding: 0;
+    width: 92%;
+    padding-left: 0;
   }
-  #content > section.posts > div.post-block {
-    width: inherit;
-    padding: 0;
-  }
-  #content > section.posts > div.post-block > article.blogpost {
-    width: inherit;
-    padding: 0;
+
+  div.wp-caption {
+    display: none;
   }
 }
 section.modal {

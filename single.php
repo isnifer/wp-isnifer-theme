@@ -8,7 +8,7 @@
 
   <div id="content" class="clear-fix" role="main">
 
-    <section class="sidebar well">
+    <section class="sidebar">
       <h2 class="pagination-centered">Sidebar</h2>
       <?php // look to see if we've disabled sidebar in a custom field, if not show it
 	$disableSidebarRight = get_post_meta($post->ID, 'disableSidebarRight', $single = true);
@@ -26,7 +26,7 @@
           <header>
             <h1><?php the_title(); ?></h1>
             <time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
-            <p>by <?php the_author() ?></p>
+            <span class="author-meta">автором <a href="/author/<?php the_author_link() ?>"><?php the_author() ?></a></span>
           </header>
 
           <div class="entry">

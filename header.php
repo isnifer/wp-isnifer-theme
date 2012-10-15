@@ -94,35 +94,33 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 
 <body id="<?php $post_parent = get_post($post->post_parent); $parentSlug = $post_parent->post_name; if (is_category()) { echo "category-template"; } elseif (is_archive()) { echo "archive-template"; } elseif (is_search()) { echo "search-results"; } elseif (is_tag()) { echo "tag-template"; } else { echo $parentSlug; } ?>" class="<?php global $wp_query; $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true ); $tn = str_replace(".php", "", $template_name); echo "template-".$tn." "; ?><?php if (is_category()) { echo 'category'; } elseif (is_search()) { echo 'search'; } elseif (is_tag()) { echo "tag"; } elseif (is_home()) { echo "home"; } elseif (is_404()) { echo "page404"; } else { echo $post->post_name; } ?>">
 
-	<div class="navbar navbar-fixed-top" id="top-header">
-    <div class="navbar-inner">
-      <div class="navContainer">
-        <ul class="nav nav-pulls">
-          <a class="brand" href="/">
-            Пространственно-временной континуум
+	<div class="navbar-top">
+    <div class="navbar-container">
+      <ul class="nav nav-pulls" id="top-header">
+        <a class="brand" href="/">
+          Пространственно-временной континуум
+        </a>
+        <li class="divider-vertical" id="firstNav"></li>
+        <li><a href="/">Главная</a></li>
+        <li class="divider-vertical"></li>
+        <li><a href="/changelog">Changelog</a></li>
+        <li class="divider-vertical"></li>
+        <li class="dropdown" id="menu1">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+            Подкаст WhyBeKey
+            <b class="caret"></b>
           </a>
-          <li class="divider-vertical" id="firstNav"></li>
-          <li><a href="/">Главная</a></li>
-          <li class="divider-vertical"></li>
-          <li><a href="/changelog">Changelog</a></li>
-          <li class="divider-vertical"></li>
-          <li class="dropdown" id="menu1">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
-              Подкаст WhyBeKey
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="http://whybekey.podfm.ru">PodFM</a></li>
-              <li><a href="http://vk.com/whybekey">VK</a></li>
-              <li><a href="http://itunes.apple.com/us/podcast/ybk/id531116741">iTunes</a></li>
-              <li><a href="/whybekey">LIVE</a></li>
-            </ul>
-          </li>
-          <li class="divider-vertical"></li>
-          <form class="navbar-search">
-            <input type="text" class="input-medium search-query" placeholder="Поиск">
-          </form>
-        </ul>
-      </div>
+          <ul class="dropdown-menu">
+            <li><a href="http://whybekey.podfm.ru">PodFM</a></li>
+            <li><a href="http://vk.com/whybekey">VK</a></li>
+            <li><a href="http://itunes.apple.com/us/podcast/ybk/id531116741">iTunes</a></li>
+            <li><a href="/whybekey">LIVE</a></li>
+          </ul>
+        </li>
+        <li class="divider-vertical"></li>
+      </ul>
+      <form class="navbar-search">
+        <input type="text" class="input-medium search-query" placeholder="Поиск">
+      </form>
     </div>
   </div>
