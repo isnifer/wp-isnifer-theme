@@ -222,71 +222,67 @@ ul.hide
 html, body
   background: #ffffff url(../img/bg.png) repeat
   color: #323445
-  min-width: 640px
+  min-width: 630px
   min-height: 100%
 
-  > div.navbar-top
-    overflow: visible
-    color: #555555
-    *position: relative
-    *z-index: 2
-    background-color: #f9f9f9
-    background-image: -moz-linear-gradient(top, white, #f2f2f2)
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2))
-    background-image: -webkit-linear-gradient(top, white, #f2f2f2)
-    background-image: -o-linear-gradient(top, white, #f2f2f2)
-    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2)
-    background-repeat: repeat-x
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0)
-    border-bottom: 1px solid #d4d4d4
-    border-radius: 4px
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065)
-    min-height: 40px
-    width: 100%
+#navbar-top
+  overflow: visible
+  color: #555555
+  background-color: #f9f9f9
+  background-image: -moz-linear-gradient(top, white, #f2f2f2)
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2))
+  background-image: -webkit-linear-gradient(top, white, #f2f2f2)
+  background-image: -o-linear-gradient(top, white, #f2f2f2)
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2)
+  background-repeat: repeat-x
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0)
+  border-bottom: 1px solid #d4d4d4
+  border-radius: 4px
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065)
+  min-height: 40px
+  width: 100%
 
-    > div.navbar-container
-      width: 1200px
-      height: 40px
-      margin: 0 auto
+  > div.navbar-container
+    margin: 0 auto
+    font-family: 'Lobster'
+    width: 1200px
+    height: 40px
+
+    > a.brand
+      margin: 0
+      padding: 8px 0 12px 0
       font-family: 'Lobster'
+      width: 360px
+      float: left
+      font-size: 20px
+      color: #000
 
-      > ul.nav
-        margin: 0 auto
-        float: none
-        -webkit-margin-before: 0
-        width: inherit
-        height: 40px
+    > ul.nav
+      margin: 0 10px 0 0
+      float: right
+      -webkit-margin-before: 0
+      height: 40px
 
-        > a.brand
-          margin: 0
-          padding: 8px 0 12px 0
-          font-family: 'Lobster'
-          width: 360px
-          float: left
-          font-size: 20px
+      > li
+        float: left
+        margin: 8px 5px 0 0
+        font-size: 16px
+
+        > a
           color: #000
-          margin-right: 320px
 
-        > li
-          float: left
-          margin: 8px 5px 0 0
-          font-size: 16px
+          > b.caret
+            border-top-color: black
+            border-bottom-color: black
+            margin-top: 8px
 
-          > a
-            color: #000
-
-            > b.caret
-              border-top-color: black
-              border-bottom-color: black
-              margin-top: 8px
-
-      > form.navbar-search
-        float: right
-        margin-top: -35px
+    > form.navbar-search
+      float: right
+      width: 180px
 
 #container
   position: relative
-  margin: 40px auto 0
+  margin: 10px auto 0
   padding: 10px
   background: transparent
   width: 1200px
@@ -514,7 +510,7 @@ html, body
   margin: 10px 0 0 -10px
   background: #d6d6d6
   height: 21px
-  width: 1200px
+  width: 100%
   text-align: center
 
   > span.copyright
@@ -522,19 +518,38 @@ html, body
     font-size: 12px
     display: inline-block
 
-@media (max-width: 1200px)
+@media screen and (max-width: 1200px)
 
-  #container, #header, #content, #footer, .navbar-container
+  #container
     width: 95%
 
-@media (max-width: 1150px)
+  #content
 
-  #container, #header, #content, #footer, .navbar-container
+    > section.posts
+      float: left
+      padding-left: 11px
+      width: 67%
+
+  div#navbar-top
+    width: 100%
+
+    > div.navbar-container
+      width: 95%
+
+      > ul.nav
+
+        > a.brand
+          margin-right: 15%
+
+
+@media screen and  (max-width: 1150px)
+
+  #container
     width: 95%
 
-@media (max-width: 1100px)
+@media screen and  (max-width: 1100px)
 
-  #container, #header, #content, #footer, .navbar-container
+  #container
     width: 95%
 
   #content
@@ -543,19 +558,19 @@ html, body
       width: 63%
 
 
-@media (max-width: 1000px)
+@media screen and  (max-width: 1000px)
 
-  #container, #header, #content, #footer
+  #container
     width: 95%
 
   #content
 
     > section.posts
-      width: 55%
+      width: 58%
 
-@media (max-width: 768px)
+@media screen and (max-width: 768px)
 
-  #container, #header, #content, #footer
+  #container
     width: 95%
 
   #content
@@ -586,7 +601,7 @@ html, body
   html, body
     font: 12px Arial
 
-  #container, #header, #content, #footer
+  #container
     width: 94%
 
   #content

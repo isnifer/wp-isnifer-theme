@@ -5368,14 +5368,13 @@ ul.hide {
 html, body {
   background: white url(../img/bg.png) repeat;
   color: #323445;
-  min-width: 640px;
+  min-width: 630px;
   min-height: 100%;
 }
-html > div.navbar-top, body > div.navbar-top {
+
+#navbar-top {
   overflow: visible;
   color: #555555;
-  *position: relative;
-  *z-index: 2;
   background-color: #f9f9f9;
   background-image: -moz-linear-gradient(top, white, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
@@ -5390,20 +5389,13 @@ html > div.navbar-top, body > div.navbar-top {
   min-height: 40px;
   width: 100%;
 }
-html > div.navbar-top > div.navbar-container, body > div.navbar-top > div.navbar-container {
-  width: 1200px;
-  height: 40px;
+#navbar-top > div.navbar-container {
   margin: 0 auto;
   font-family: "Lobster";
-}
-html > div.navbar-top > div.navbar-container > ul.nav, body > div.navbar-top > div.navbar-container > ul.nav {
-  margin: 0 auto;
-  float: none;
-  -webkit-margin-before: 0;
-  width: inherit;
+  width: 1200px;
   height: 40px;
 }
-html > div.navbar-top > div.navbar-container > ul.nav > a.brand, body > div.navbar-top > div.navbar-container > ul.nav > a.brand {
+#navbar-top > div.navbar-container > a.brand {
   margin: 0;
   padding: 8px 0 12px 0;
   font-family: "Lobster";
@@ -5411,29 +5403,34 @@ html > div.navbar-top > div.navbar-container > ul.nav > a.brand, body > div.navb
   float: left;
   font-size: 20px;
   color: black;
-  margin-right: 320px;
 }
-html > div.navbar-top > div.navbar-container > ul.nav > li, body > div.navbar-top > div.navbar-container > ul.nav > li {
+#navbar-top > div.navbar-container > ul.nav {
+  margin: 0 10px 0 0;
+  float: right;
+  -webkit-margin-before: 0;
+  height: 40px;
+}
+#navbar-top > div.navbar-container > ul.nav > li {
   float: left;
   margin: 8px 5px 0 0;
   font-size: 16px;
 }
-html > div.navbar-top > div.navbar-container > ul.nav > li > a, body > div.navbar-top > div.navbar-container > ul.nav > li > a {
+#navbar-top > div.navbar-container > ul.nav > li > a {
   color: black;
 }
-html > div.navbar-top > div.navbar-container > ul.nav > li > a > b.caret, body > div.navbar-top > div.navbar-container > ul.nav > li > a > b.caret {
+#navbar-top > div.navbar-container > ul.nav > li > a > b.caret {
   border-top-color: black;
   border-bottom-color: black;
   margin-top: 8px;
 }
-html > div.navbar-top > div.navbar-container > form.navbar-search, body > div.navbar-top > div.navbar-container > form.navbar-search {
+#navbar-top > div.navbar-container > form.navbar-search {
   float: right;
-  margin-top: -35px;
+  width: 180px;
 }
 
 #container {
   position: relative;
-  margin: 40px auto 0;
+  margin: 10px auto 0;
   padding: 10px;
   background: transparent;
   width: 1200px;
@@ -5665,7 +5662,7 @@ html > div.navbar-top > div.navbar-container > form.navbar-search, body > div.na
   margin: 10px 0 0 -10px;
   background: #d6d6d6;
   height: 21px;
-  width: 1200px;
+  width: 100%;
   text-align: center;
 }
 #footer > span.copyright {
@@ -5674,18 +5671,34 @@ html > div.navbar-top > div.navbar-container > form.navbar-search, body > div.na
   display: inline-block;
 }
 
-@media (max-width: 1200px) {
-  #container, #header, #content, #footer, .navbar-container {
+@media screen and (max-width: 1200px) {
+  #container {
+    width: 95%;
+  }
+
+  #content > section.posts {
+    float: left;
+    padding-left: 11px;
+    width: 67%;
+  }
+
+  div#navbar-top {
+    width: 100%;
+  }
+  div#navbar-top > div.navbar-container {
+    width: 95%;
+  }
+  div#navbar-top > div.navbar-container > ul.nav > a.brand {
+    margin-right: 15%;
+  }
+}
+@media screen and  (max-width: 1150px) {
+  #container {
     width: 95%;
   }
 }
-@media (max-width: 1150px) {
-  #container, #header, #content, #footer, .navbar-container {
-    width: 95%;
-  }
-}
-@media (max-width: 1100px) {
-  #container, #header, #content, #footer, .navbar-container {
+@media screen and  (max-width: 1100px) {
+  #container {
     width: 95%;
   }
 
@@ -5693,17 +5706,17 @@ html > div.navbar-top > div.navbar-container > form.navbar-search, body > div.na
     width: 63%;
   }
 }
-@media (max-width: 1000px) {
-  #container, #header, #content, #footer {
+@media screen and  (max-width: 1000px) {
+  #container {
     width: 95%;
   }
 
   #content > section.posts {
-    width: 55%;
+    width: 58%;
   }
 }
-@media (max-width: 768px) {
-  #container, #header, #content, #footer {
+@media screen and (max-width: 768px) {
+  #container {
     width: 95%;
   }
 
@@ -5738,7 +5751,7 @@ html > div.navbar-top > div.navbar-container > form.navbar-search, body > div.na
     font: 12px Arial;
   }
 
-  #container, #header, #content, #footer {
+  #container {
     width: 94%;
   }
 

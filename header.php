@@ -84,9 +84,6 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
   <script type="text/javascript">
     $(document).ready(function(){
       $('.dropdown-toggle').dropdown();
-      $('a[href="#top-header"]').click(function(){
-        $(window).animate();
-      })
     })
   </script>
 
@@ -94,17 +91,15 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 
 <body id="<?php $post_parent = get_post($post->post_parent); $parentSlug = $post_parent->post_name; if (is_category()) { echo "category-template"; } elseif (is_archive()) { echo "archive-template"; } elseif (is_search()) { echo "search-results"; } elseif (is_tag()) { echo "tag-template"; } else { echo $parentSlug; } ?>" class="<?php global $wp_query; $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true ); $tn = str_replace(".php", "", $template_name); echo "template-".$tn." "; ?><?php if (is_category()) { echo 'category'; } elseif (is_search()) { echo 'search'; } elseif (is_tag()) { echo "tag"; } elseif (is_home()) { echo "home"; } elseif (is_404()) { echo "page404"; } else { echo $post->post_name; } ?>">
 
-	<div class="navbar-top">
+	<div id="navbar-top">
     <div class="navbar-container">
+      <a class="brand" href="/">
+        Пространственно-временной континуум
+      </a>
+      <form class="navbar-search">
+        <input type="text" class="input-medium search-query" placeholder="Поиск">
+      </form>
       <ul class="nav nav-pulls" id="top-header">
-        <a class="brand" href="/">
-          Пространственно-временной континуум
-        </a>
-        <li class="divider-vertical" id="firstNav"></li>
-        <li><a href="/">Главная</a></li>
-        <li class="divider-vertical"></li>
-        <li><a href="/changelog">Changelog</a></li>
-        <li class="divider-vertical"></li>
         <li class="dropdown" id="menu1">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
             Подкаст WhyBeKey
@@ -119,8 +114,5 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
         </li>
         <li class="divider-vertical"></li>
       </ul>
-      <form class="navbar-search">
-        <input type="text" class="input-medium search-query" placeholder="Поиск">
-      </form>
     </div>
   </div>
