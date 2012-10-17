@@ -49,7 +49,6 @@
 
         <!--BEGIN: Single Post-->
         <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
           <header>
             <h1><?php the_title(); ?></h1>
             <time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
@@ -58,15 +57,15 @@
 
           <div class="entry">
             <?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
-            <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
+            <?php link_pages('<p><strong>Страниц:</strong> ', '</p>', 'номер'); ?>
           </div>
-
+          <div class="clear-fix"></div>
           <!--BEGIN: Post Meta Data-->
           <footer class="post-meta-data">
             <ul class="no-bullet">
-              <li>Posted in <?php the_category(', ') ?></li>
-              <li><?php edit_post_link('[Edit]', '<small>', '</small>'); ?></li>
-              <li>Tags: <?php the_tags('Tags: ', ', ', '<br />'); ?></li>
+              <li>Опубликовано в <?php the_category(', ') ?></li>
+              <li><?php edit_post_link('Изменить', '<small>', '</small>'); ?></li>
+              <li>Метки: <?php the_tags('Tags: ', ', ', '<br />'); ?></li>
             </ul>
           </footer>
           <!--END: Post Meta Data-->

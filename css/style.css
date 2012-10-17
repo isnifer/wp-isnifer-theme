@@ -5300,6 +5300,9 @@ img.alignleft {
   display: inline;
   float: left;
 }
+img.alignnone {
+  float: none;
+}
 
 .sys {
   text-align: left;
@@ -5682,6 +5685,15 @@ article.post > div.entry > div.wp-caption {
   float: left;
   margin: 0 10px 10px 0;
 }
+article.post > div.entry > div.wp-caption.alignnone {
+  float: none;
+}
+article.post > div.entry > div.wp-caption.alignleft {
+  float: left;
+}
+article.post > div.entry > div.wp-caption.alignright {
+  float: right;
+}
 article.post > div.entry > p {
   font-family: Georgia, "PT Sans Narrow", Arial;
   font-size: 16px;
@@ -5697,6 +5709,23 @@ article.post > div.entry > p > a.more-link:hover {
 
 #content > h1.search-header {
   font: bold 30px "Lobster";
+}
+
+div.form-label {
+  width: 70px;
+  height: 20px;
+  float: left;
+}
+div.form-label > label {
+  float: left;
+  margin-right: 2px;
+}
+div.form-label > span.required {
+  color: red;
+}
+
+div.form-submit > input[type="submit"] {
+  margin-left: 155px;
 }
 
 @media screen and (max-width: 1200px) {

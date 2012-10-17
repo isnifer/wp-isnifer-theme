@@ -40,6 +40,15 @@ article.post
       float: left
       margin: 0 10px 10px 0
 
+      &.alignnone
+        float: none
+
+      &.alignleft
+        float: left
+
+      &.alignright
+        float: right
+
     > p
       font-family: Georgia, "PT Sans Narrow", Arial
       font-size: 16px
@@ -58,3 +67,24 @@ article.post
 
   > h1.search-header
     font: bold 30px "Lobster"
+
+
+// Comments.php
+
+div.form-label
+  width: 70px
+  height: 20px
+  float: left
+
+  > label
+    float: left
+    margin-right: 2px
+
+  > span.required
+    color: red
+
+div.form-submit
+
+  > input[type="submit"]
+    margin-left: 155px
+

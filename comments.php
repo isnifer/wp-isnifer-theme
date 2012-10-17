@@ -103,37 +103,34 @@ foreach ( $comments as $comment )
  
 <?php else : ?>
  
-                            <p id="comment-notes"><?php _e('Ваша электропочта <em>никому</em> не будет видна.', 'your-theme') ?> <?php if ($req) _e('Обязательные поля помечены <span class="required">*</span>', 'your-theme') ?></p>
+                            <p id="comment-notes"><?php _e('Ваша электропочта <em>никому</em> не будет видна.', 'your-theme') ?> <?php if ($req) _e('Обязательные поля помечены <span style="color: red;">*</span>', 'your-theme') ?></p>
  
               <div id="form-section-author" class="form-section">
-                                <div class="form-label"><label for="author"><?php _e('Name', 'your-theme') ?></label> <?php if ($req) _e('<span class="required">*</span>', 'your-theme') ?></div>
+                                <div class="form-label"><label for="author"><?php _e('Имя', 'your-theme') ?></label> <?php if ($req) _e('<span class="required">*</span>', 'your-theme') ?></div>
                                 <div class="form-input"><input id="author" name="author" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="20" tabindex="3" /></div>
               </div><!-- #form-section-author .form-section -->
  
               <div id="form-section-email" class="form-section">
-                                <div class="form-label"><label for="email"><?php _e('Email', 'your-theme') ?></label> <?php if ($req) _e('<span class="required">*</span>', 'your-theme') ?></div>
+                                <div class="form-label"><label for="email"><?php _e('Почта', 'your-theme') ?></label> <?php if ($req) _e('<span class="required">*</span>', 'your-theme') ?></div>
                                 <div class="form-input"><input id="email" name="email" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" /></div>
               </div><!-- #form-section-email .form-section -->
  
               <div id="form-section-url" class="form-section">
-                                <div class="form-label"><label for="url"><?php _e('Website', 'your-theme') ?></label></div>
+                                <div class="form-label"><label for="url"><?php _e('Сайт', 'your-theme') ?></label></div>
                                 <div class="form-input"><input id="url" name="url" type="text" value="<?php echo $comment_author_url ?>" size="30" maxlength="50" tabindex="5" /></div>
               </div><!-- #form-section-url .form-section -->
  
 <?php endif /* if ( $user_ID ) */ ?>
  
               <div id="form-section-comment" class="form-section">
-                                <div class="form-label"><label for="comment"><?php _e('Comment', 'your-theme') ?></label></div>
+                                <div class="form-label"><label for="comment"><?php _e('Коммент', 'your-theme') ?></label></div>
                                 <div class="form-textarea"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea></div>
               </div><!-- #form-section-comment .form-section -->
- 
-              <div id="form-allowed-tags" class="form-section">
-                  <p><span><?php _e('You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'your-theme') ?></span> <code><?php echo allowed_tags(); ?></code></p>
-              </div>
+
  
 <?php do_action('comment_form', $post->ID); ?>
  
-                            <div class="form-submit"><input id="submit" name="submit" type="submit" value="<?php _e('Post Comment', 'your-theme') ?>" tabindex="7" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></div>
+                            <div class="form-submit"><input id="submit" name="submit" type="submit" value="<?php _e('Запилить коммент', 'your-theme') ?>" tabindex="7" class="btn btn-info" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></div>
  
 <?php comment_id_fields(); ?> 
  
