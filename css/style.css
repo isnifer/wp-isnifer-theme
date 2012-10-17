@@ -5368,7 +5368,7 @@ ul.hide {
 html, body {
   background: white url(../img/bg.png) repeat;
   color: #323445;
-  min-width: 630px;
+  min-width: 360px;
   min-height: 100%;
 }
 
@@ -5728,26 +5728,19 @@ section.modal {
     width: 90%;
   }
 
-  section.sidebar {
-    display: none;
-  }
-
-  ul.nav {
-    width: 50%;
-    height: 40px;
-  }
-  ul.nav > a.brand {
+  > a.brand {
     margin: 0 0 0 10px;
     padding: 8px 0 12px 0;
     font-family: "Lobster";
     width: 30%;
   }
-  ul.nav > li {
+
+  ul.nav, form.navbar-search, section.sidebar {
     display: none;
   }
 }
 @media (max-width: 640px) {
-  img {
+  div.wp-caption, img.alignleft {
     display: none;
   }
 
@@ -5756,15 +5749,11 @@ section.modal {
   }
 
   #container {
-    width: 94%;
+    width: 95%;
   }
 
   #content > section.posts {
-    width: 92%;
+    width: 90%;
     padding-left: 0;
-  }
-
-  div.wp-caption {
-    display: none;
   }
 }
