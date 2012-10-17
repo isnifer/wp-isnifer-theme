@@ -1,17 +1,50 @@
 <?php get_header(); ?>
 
-<?php // to disable this sidebar on a page by page basis just add a custom field to your page or post of disableSidebarLeft = true
-	$disableSidebarLeft = get_post_meta($post->ID, 'disableSidebarLeft', $single = true);
-	if ($disableSidebarLeft !== 'true') { get_sidebar('SidebarLeft'); }
-?>
+<div id="container">
+<header id="header">
 
-<!--BEGIN: Content-->
+</header>
 <div id="content" class="clear-fix" role="main">
-	
-	<header>
-		<h1>Search Results</h1>
-	</header>
-	
+
+  <section class="findme">
+    <p class="hellome">Это я!</p>
+    <div class="myphoto"></div>
+    <div class="twitter-followers">
+      <a href="https://twitter.com/iSnifer" class="twitter-follow-button" data-show-count="true" data-lang="ru">Follow @iSnifer</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </section>
+  <section class="sidebar">
+    <?php
+      if ( 'content' != $current_layout ) :
+      ?>
+    <div id="secondary" class="widget-area" role="complementary">
+      <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+
+      <aside id="archives" class="widget">
+        <h3 class="widget-title"><?php _e( 'Архив записей', 'new-style' ); ?></h3>
+        <ul>
+          <?php wp_get_archives( array( 'type' => 'monthly', 'show_post_count' => true ) ); ?>
+        </ul>
+      </aside>
+
+      <aside id="meta" class="widget">
+        <h3 class="widget-title"><?php _e( 'Авторизация', 'new-style' ); ?></h3>
+        <ul>
+          <?php wp_register(); ?>
+          <li><?php wp_loginout(); ?></li>
+          <?php wp_meta(); ?>
+        </ul>
+      </aside>
+
+      <?php endif; // end sidebar widget area ?>
+    </div><!-- #secondary .widget-area -->
+    <?php endif; ?>
+  </section>
+
+	<h1 class="search-header">Результаты поиска</h1>
+
+	<section class="posts">
 	<?php
 	
 	// Query Posts
@@ -47,28 +80,22 @@
 		
 		<?php endwhile; ?>
 
-			<div class="navigation">
-				<?php posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Previous Page</div>','<div class="alignright">Next Page &raquo;</div>') ?>
-			</div>
+    <div class="navigation">
+      <?php posts_nav_link('&nbsp;','<div class="alignleft">&laquo; Сюда</div>','<div class="alignright">Туда &raquo;</div>') ?>
+    </div>
 
 		<?php else : // if no posts were found give the warning below ?>
 
 		<div class="post sys error">
-			<p>Nothing Found, there seems to be something wrong... Try searching instead:</p>
+			<p>Ничего не найдено! Проверь не ошибки, попробуй еще:</p>
 			<?php get_search_form(); ?>
-		
-			<h2>Topics of Interest</h2>
-			<p><?php wp_tag_cloud(''); ?></p>
 		</div>
 		
 	<?php endif; //END: The Loop ?>
 
+  </section>
+
 </div>
 <!--END: Content-->
-
-<?php // look to see if we've disabled sidebar in a custom field, if not show it
-	$disableSidebarRight = get_post_meta($post->ID, 'disableSidebarRight', $single = true);
-	if ($disableSidebarRight !== 'true') { get_sidebar('SidebarRight'); }
-?>
 
 <?php get_footer(); ?>

@@ -82,7 +82,7 @@ foreach ( $comments as $comment )
 <?php /* If comments are open, build the respond form */ ?>
 <?php if ( 'open' == $post->comment_status ) : ?>
                 <div id="respond">
-                    <h3><?php comment_form_title( __('Post a Comment', 'your-theme'), __('Post a Reply to %s', 'your-theme') ); ?></h3>
+                    <h3><?php comment_form_title( __('Я думаю, что...', 'your-theme'), __('Post a Reply to %s', 'your-theme') ); ?></h3>
  
                     <div id="cancel-comment-reply"><?php cancel_comment_reply_link() ?></div>
  
@@ -96,14 +96,14 @@ foreach ( $comments as $comment )
                         <form id="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
  
 <?php if ( $user_ID ) : ?>
-                            <p id="login"><?php printf(__('<span class="loggedin">Logged in as <a href="%1$s" title="Logged in as %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Log out of this account">Log out?</a></span>', 'your-theme'),
+                            <p id="login"><?php printf(__('<span class="loggedin">Вы вошли как <a href="%1$s" title="Вы вошли как %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Log out of this account">Выйти?</a></span>', 'your-theme'),
                                 get_option('siteurl') . '/wp-admin/profile.php',
                                 wp_specialchars($user_identity, true),
                                 wp_logout_url(get_permalink()) ) ?></p>
  
 <?php else : ?>
  
-                            <p id="comment-notes"><?php _e('Your email is <em>never</em> published nor shared.', 'your-theme') ?> <?php if ($req) _e('Required fields are marked <span class="required">*</span>', 'your-theme') ?></p>
+                            <p id="comment-notes"><?php _e('Ваша электропочта <em>никому</em> не будет видна.', 'your-theme') ?> <?php if ($req) _e('Обязательные поля помечены <span class="required">*</span>', 'your-theme') ?></p>
  
               <div id="form-section-author" class="form-section">
                                 <div class="form-label"><label for="author"><?php _e('Name', 'your-theme') ?></label> <?php if ($req) _e('<span class="required">*</span>', 'your-theme') ?></div>

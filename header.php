@@ -96,8 +96,9 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
       <a class="brand" href="/">
         Пространственно-временной континуум
       </a>
-      <form class="navbar-search">
-        <input type="text" class="input-medium search-query" placeholder="Поиск">
+      <form class="navbar-search" method="get" id="search-form" action="<?php bloginfo('home'); ?>/">
+        <input type="text" class="input-medium search-query" value="<?php the_search_query(); ?>" name="s" id="s" accesskey="s" tabindex="1" placeholder="Это поиск">
+        <input class="button" type="submit" value="Go &gt;" tabindex="2" style="visibility: hidden;" />
       </form>
       <ul class="nav nav-pulls" id="top-header">
         <li class="dropdown" id="menu1">

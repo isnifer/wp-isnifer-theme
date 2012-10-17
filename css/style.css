@@ -5441,7 +5441,7 @@ html, body {
   width: 100%;
   margin: 0 auto;
   height: 150px;
-  background: url("http://lorempixel.com/1200/150/people") no-repeat;
+  background: url(../img/header-bg.png) no-repeat;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -5453,7 +5453,7 @@ html, body {
   width: 100%;
   height: auto;
 }
-#content > section.sidebar {
+#content > section.findme {
   float: right;
   margin: 0 10px 0 0;
   padding: 19px;
@@ -5461,87 +5461,106 @@ html, body {
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   width: 210px;
+  height: 210px;
+}
+#content > section.findme > p.hellome {
+  font: bold 18px "PT Sans Narrow";
+  text-shadow: 1px 1px 1px #55565c;
+  text-align: center;
+}
+#content > section.findme > div.myphoto {
+  margin: 0 auto;
+  background: url(../img/myphoto.png) no-repeat;
+  width: 150px;
+  height: 150px;
+}
+#content > section.findme > div.twitter-followers {
+  margin: 10px auto 0;
+  width: 195px;
+  height: 20px;
+}
+#content > section.sidebar {
+  float: right;
+  margin: 270px -248px 0 0;
+  padding: 19px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 210px;
   height: auto;
 }
-#content > section.sidebar > h2 {
-  margin: -10px 0 0 0;
-  padding: 0;
-  font-family: "PT Sans Narrow", serif;
+#content > section.sidebar > div.widget-area > aside > h3.widget-title {
+  font: bold 32px "PT Sans Narrow";
+  color: #333333;
 }
-#content > section.sidebar > div#sidebar > ul {
+#content > section.sidebar > div.widget-area > aside > ul {
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0;
 }
-#content > section.sidebar > div#sidebar > ul > li {
+#content > section.sidebar > div.widget-area > aside > ul > li {
   list-style: none;
   list-style-image: none;
   margin: 0;
   padding: 0;
+  background: url(../img/arrow_next_right.png) no-repeat;
+  background-position: left;
+  text-indent: 20px;
 }
-#content > section.sidebar > div#sidebar > ul > ul {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
-}
-#content > section.sidebar > div#sidebar > ul > ul > li {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
+#content > section.sidebar > div.widget-area > aside > ul > li > a {
+  color: #333333;
 }
 #content > section.posts {
   float: left;
   padding-left: 11px;
   width: 70%;
 }
-#content > section.posts > div.post-block, #content > section.posts article.post {
+#content > section.posts > div.post-block {
   width: 100%;
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 5px 20px;
   background: white;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
-#content > section.posts > div.post-block > article.blogpost, #content > section.posts article.post > article.blogpost {
+#content > section.posts > div.post-block > article.blogpost {
   width: 100%;
   margin: 20px 0px 20px 0px;
   overflow: hidden;
 }
-#content > section.posts > div.post-block > article.blogpost > h1, #content > section.posts article.post > article.blogpost > h1 {
+#content > section.posts > div.post-block > article.blogpost > h1 {
   margin: -10px 0 0 0;
   padding: 0;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 26px;
 }
-#content > section.posts > div.post-block > article.blogpost > h1 > a, #content > section.posts article.post > article.blogpost > h1 > a {
+#content > section.posts > div.post-block > article.blogpost > h1 > a {
   color: black;
   text-shadow: 1px 1px 1px black;
 }
-#content > section.posts > div.post-block > article.blogpost > h1 > a:hover, #content > section.posts article.post > article.blogpost > h1 > a:hover {
+#content > section.posts > div.post-block > article.blogpost > h1 > a:hover {
   text-shadow: 2px 2px 3px #55565c;
   text-decoration: none;
 }
-#content > section.posts > div.post-block > article.blogpost > h1 > a:active, #content > section.posts article.post > article.blogpost > h1 > a:active {
+#content > section.posts > div.post-block > article.blogpost > h1 > a:active {
   text-shadow: 1px 1px 1px black;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta, #content > section.posts article.post > article.blogpost > div.entry-meta {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta {
   color: #7d7d7d;
   padding: 5px 0 10px;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a, #content > section.posts article.post > article.blogpost > div.entry-meta > time > a, #content > section.posts article.post > article.blogpost > div.entry-meta span > a {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a {
   color: #888888;
   text-decoration: underline;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:hover, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:hover, #content > section.posts article.post > article.blogpost > div.entry-meta > time > a:hover, #content > section.posts article.post > article.blogpost > div.entry-meta span > a:hover {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:hover, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:hover {
   color: #454242;
 }
-#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:active, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:active, #content > section.posts article.post > article.blogpost > div.entry-meta > time > a:active, #content > section.posts article.post > article.blogpost > div.entry-meta span > a:active {
+#content > section.posts > div.post-block > article.blogpost > div.entry-meta > time > a:active, #content > section.posts > div.post-block > article.blogpost > div.entry-meta span > a:active {
   color: #706e6e;
 }
-#content > section.posts > div.post-block > article.blogpost > div.wp-caption, #content > section.posts article.post > article.blogpost > div.wp-caption {
+#content > section.posts > div.post-block > article.blogpost > div.wp-caption {
   background: #f1f1f1;
   line-height: 18px;
   padding: 8px 5px 0;
@@ -5549,66 +5568,16 @@ html, body {
   float: left;
   margin: 0 10px 10px 0;
 }
-#content > section.posts > div.post-block > article.blogpost > p, #content > section.posts article.post > article.blogpost > p {
+#content > section.posts > div.post-block > article.blogpost > p {
   font-family: Georgia, "PT Sans Narrow", Arial;
   font-size: 16px;
   line-height: 24px;
 }
-#content > section.posts > div.post-block > article.blogpost > p > a.more-link, #content > section.posts article.post > article.blogpost > p > a.more-link {
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link {
   float: right;
   text-decoration: none;
 }
-#content > section.posts > div.post-block > article.blogpost > p > a.more-link:hover, #content > section.posts article.post > article.blogpost > p > a.more-link:hover {
-  text-decoration: none;
-}
-#content > section.posts > article.post {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 20px;
-  background: white;
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-}
-#content > section.posts > article.post > header > h1 {
-  margin: -10px 0 0 0;
-  padding: 0;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 30px;
-}
-#content > section.posts > article.post > header > time, #content > section.posts > article.post > header span {
-  color: #888888;
-}
-#content > section.posts > article.post > header > time > a, #content > section.posts > article.post > header span > a {
-  color: #888888;
-  text-decoration: underline;
-}
-#content > section.posts > article.post > header > time > a:hover, #content > section.posts > article.post > header span > a:hover {
-  color: #454242;
-}
-#content > section.posts > article.post > header > time > a:active, #content > section.posts > article.post > header span > a:active {
-  color: #706e6e;
-}
-#content > section.posts > article.post > div.entry {
-  margin-top: 10px;
-}
-#content > section.posts > article.post > div.entry > div.wp-caption {
-  background: #f1f1f1;
-  line-height: 18px;
-  padding: 8px 5px 0;
-  text-align: center;
-  float: left;
-  margin: 0 10px 10px 0;
-}
-#content > section.posts > article.post > div.entry > p {
-  font-family: Georgia, "PT Sans Narrow", Arial;
-  font-size: 16px;
-  line-height: 24px;
-}
-#content > section.posts > article.post > div.entry > p > a.more-link {
-  float: right;
-  text-decoration: none;
-}
-#content > section.posts > article.post > div.entry > p > a.more-link:hover {
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link:hover {
   text-decoration: none;
 }
 #content > div.pagination {
@@ -5675,6 +5644,61 @@ section.modal {
   display: none;
 }
 
+article.post {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+article.post > header > h1 {
+  margin: -10px 0 0 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 30px;
+}
+article.post > header > time, article.post > header span {
+  color: #888888;
+}
+article.post > header > time > a, article.post > header span > a {
+  color: #888888;
+  text-decoration: underline;
+}
+article.post > header > time > a:hover, article.post > header span > a:hover {
+  color: #454242;
+}
+article.post > header > time > a:active, article.post > header span > a:active {
+  color: #706e6e;
+}
+article.post > div.entry {
+  margin-top: 10px;
+}
+article.post > div.entry > div.wp-caption {
+  background: #f1f1f1;
+  line-height: 18px;
+  padding: 8px 5px 0;
+  text-align: center;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+article.post > div.entry > p {
+  font-family: Georgia, "PT Sans Narrow", Arial;
+  font-size: 16px;
+  line-height: 24px;
+}
+article.post > div.entry > p > a.more-link {
+  float: right;
+  text-decoration: none;
+}
+article.post > div.entry > p > a.more-link:hover {
+  text-decoration: none;
+}
+
+#content > h1.search-header {
+  font: bold 30px "Lobster";
+}
+
 @media screen and (max-width: 1200px) {
   #container {
     width: 95%;
@@ -5735,7 +5759,7 @@ section.modal {
     width: 30%;
   }
 
-  ul.nav, form.navbar-search, section.sidebar {
+  ul.nav, form.navbar-search, section.sidebar, section.findme {
     display: none;
   }
 }

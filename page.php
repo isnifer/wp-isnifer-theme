@@ -45,9 +45,26 @@
 </div>
 <!--END: Content-->
 
-<?php // look to see if we've disabled sidebar in a custom field, if not show it
-	$disableSidebarRight = get_post_meta($post->ID, 'disableSidebarRight', $single = true);
-	if ($disableSidebarRight !== 'true') { get_sidebar('SidebarRight'); }
-?>
+<?php if ( 'content' != $current_layout ) : ?>
+<div id="secondary" class="widget-area" role="complementary">
+<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+
+<aside id="archives" class="widget">
+  <h3 class="widget-title"><?php _e( 'Архив записей', 'new-style' ); ?></h3>
+  <ul>
+    <?php wp_get_archives( array( 'type' => 'monthly', 'show_post_count' => true ) ); ?>
+  </ul>
+</aside>
+
+<aside id="meta" class="widget">
+  <h3 class="widget-title"><?php _e( 'Авторизация', 'new-style' ); ?></h3>
+  <ul>
+    <?php wp_register(); ?>
+    <li><?php wp_loginout(); ?></li>
+    <?php wp_meta(); ?>
+  </ul>
+</aside>
+
+<?php endif; // end sidebar widget area ?>
 
 <?php get_footer(); ?>

@@ -5,6 +5,14 @@
 
   </header>
   <div id="content">
+    <section class="findme">
+      <p class="hellome">Это я!</p>
+      <div class="myphoto"></div>
+      <div class="twitter-followers">
+        <a href="https://twitter.com/iSnifer" class="twitter-follow-button" data-show-count="true" data-lang="ru">Follow @iSnifer</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </section>
     <section class="sidebar">
       <?php
       if ( 'content' != $current_layout ) :
@@ -13,14 +21,14 @@
         <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
         <aside id="archives" class="widget">
-          <h3 class="widget-title"><?php _e( 'Archives', 'new-style' ); ?></h3>
+          <h3 class="widget-title"><?php _e( 'Архив записей', 'new-style' ); ?></h3>
           <ul>
-            <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+            <?php wp_get_archives( array( 'type' => 'monthly', 'show_post_count' => true ) ); ?>
           </ul>
         </aside>
 
         <aside id="meta" class="widget">
-          <h3 class="widget-title"><?php _e( 'Meta', 'new-style' ); ?></h3>
+          <h3 class="widget-title"><?php _e( 'Авторизация', 'new-style' ); ?></h3>
           <ul>
             <?php wp_register(); ?>
             <li><?php wp_loginout(); ?></li>

@@ -7,13 +7,40 @@
   </header>
 
   <div id="content" class="clear-fix" role="main">
-
+    <section class="findme">
+      <p class="hellome">Это я!</p>
+      <div class="myphoto"></div>
+      <div class="twitter-followers">
+        <a href="https://twitter.com/iSnifer" class="twitter-follow-button" data-show-count="true" data-lang="ru">Follow @iSnifer</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </section>
     <section class="sidebar">
-      <h2 class="pagination-centered">Sidebar</h2>
-      <?php // look to see if we've disabled sidebar in a custom field, if not show it
-	$disableSidebarRight = get_post_meta($post->ID, 'disableSidebarRight', $single = true);
-      if ($disableSidebarRight !== 'true') { get_sidebar('SidebarRight'); }
+      <?php
+      if ( 'content' != $current_layout ) :
       ?>
+      <div id="secondary" class="widget-area" role="complementary">
+        <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+
+        <aside id="archives" class="widget">
+          <h3 class="widget-title"><?php _e( 'Архив записей', 'new-style' ); ?></h3>
+          <ul>
+            <?php wp_get_archives( array( 'type' => 'monthly', 'show_post_count' => true ) ); ?>
+          </ul>
+        </aside>
+
+        <aside id="meta" class="widget">
+          <h3 class="widget-title"><?php _e( 'Авторизация', 'new-style' ); ?></h3>
+          <ul>
+            <?php wp_register(); ?>
+            <li><?php wp_loginout(); ?></li>
+            <?php wp_meta(); ?>
+          </ul>
+        </aside>
+
+        <?php endif; // end sidebar widget area ?>
+      </div><!-- #secondary .widget-area -->
+      <?php endif; ?>
     </section>
 
     <section class="posts">
@@ -44,7 +71,7 @@
           </footer>
           <!--END: Post Meta Data-->
 
-          <h2><?php comments_popup_link('Share your comments', '1 Comment', '% Comments'); ?></h2>
+          <h2><?php comments_popup_link('А Вы что думаете об этом?', '1 Comment', '% Comments'); ?></h2>
           <?php comments_template( '', true ); ?>
 
         </article>
