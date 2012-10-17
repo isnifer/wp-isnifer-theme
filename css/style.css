@@ -5671,6 +5671,10 @@ html, body {
   display: inline-block;
 }
 
+section.modal {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   #container {
     width: 95%;
@@ -5763,7 +5767,4 @@ html, body {
   div.wp-caption {
     display: none;
   }
-}
-section.modal {
-  display: none;
 }
