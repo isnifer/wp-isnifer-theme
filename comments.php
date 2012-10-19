@@ -38,7 +38,7 @@ foreach ( $comments as $comment )
 <?php if ( ! empty($comments_by_type['comment']) ) : ?>
  
 	<div id="comments-list" class="comments">
-	<h3><?php printf($comment_count > 1 ? __('<span>%d</span> комментария (-ев)', 'your-theme') : __('<span>Один</span> комментарий', 'your-theme'), $comment_count) ?></h3>
+	<!--h3><?php printf($comment_count > 1 ? __('<span>%d</span> комментария (-ев)', 'your-theme') : __('<span>Один</span> комментарий', 'your-theme'), $comment_count) ?></h3-->
  
 <?php /* If there are enough comments, build the comment navigation  */ ?>
 <?php $total_pages = get_comment_pages_count(); if ( $total_pages > 1 ) : ?>
@@ -68,7 +68,7 @@ foreach ( $comments as $comment )
 <?php if ( ! empty($comments_by_type['pings']) ) : ?>
 	
 	<div id="trackbacks-list" class="comments">
-		<h3><?php printf($ping_count > 1 ? __('<span>%d</span> Отклики', 'your-theme') : __('<span>Один</span> Trackback', 'your-theme'), $ping_count) ?></h3>
+		<h3><?php printf($ping_count > 1 ? __('<span>%d</span> Отклика (-ов)', 'your-theme') : __('<span>Один</span> отклик', 'your-theme'), $ping_count) ?></h3>
  
 		<?php /* An ordered list of our custom trackbacks callback, custom_pings(), in functions.php   */ ?>
 		<ol>
@@ -94,7 +94,7 @@ foreach ( $comments as $comment )
                         <form id="commentform" action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
  
 <?php if ( $user_ID ) : ?>
-                            <p id="login"><?php printf(__('<span class="loggedin">Вы вошли как <a href="%1$s" title="Вы вошли как %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Log out of this account">Выйти?</a></span>', 'your-theme'),
+                            <p id="login"><?php printf(__('<span class="loggedin">Вы вошли как <a href="%1$s" title="Вы вошли как %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Выйти?">Выйти?</a></span>', 'your-theme'),
                                 get_option('siteurl') . '/wp-admin/profile.php',
                                 wp_specialchars($user_identity, true),
                                 wp_logout_url(get_permalink()) ) ?></p>

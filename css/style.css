@@ -5730,6 +5730,9 @@ article.post > h2.archive_header > a, article.page > h2.archive_header > a {
   font: bold 28px "PT Sans Narrow";
   color: black;
 }
+article.post > h2.add_comment, article.page > h2.add_comment {
+  margin-left: 25px;
+}
 article.post > h2.add_comment > a, article.page > h2.add_comment > a {
   font: bold 24px "Lobster";
   color: black;
@@ -5785,6 +5788,67 @@ article.post > h2.add_comment > a:hover, article.page > h2.add_comment > a:hover
 div#comments {
   font: 13px Arial;
   font-style: italic;
+}
+div#comments > div#comments-list > ol > li.comment {
+  margin-bottom: 50px;
+}
+div#comments > div#comments-list > ol > li.comment > div.comment-author > img.photo {
+  width: 40px;
+  height: 40px;
+}
+div#comments > div#comments-list > ol > li.comment > div.comment-author > span {
+  margin: -38px 0 0 50px;
+  display: block;
+}
+div#comments > div#comments-list > ol > li.comment > div.comment-meta {
+  margin: -3px 0 0 50px;
+}
+div#comments > div#comments-list > ol > li.comment > div.comment-content {
+  margin: 5px 0 0 50px;
+}
+div#comments > div#comments-list > ol > li.comment > div.comment-reply-link {
+  float: right;
+  margin-right: 50px;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children > li {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+  background: url(../img/children.png) no-repeat;
+  background-position: left 8%;
+  padding-left: 30px;
+  margin-left: 50px;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children > li > div.comment-author > img.photo {
+  width: 40px;
+  height: 40px;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children > li > div.comment-author > span {
+  margin: -38px 0 0 50px;
+  display: block;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children > li > div.comment-meta {
+  margin: -3px 0 0 50px;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children > li > div.comment-content {
+  margin: 5px 0 0 50px;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children > li > div.comment-reply-link {
+  float: right;
+  margin-right: 50px;
+}
+div#comments > div#comments-list > ol > li.comment > ul.children > li.comment-author-admin {
+  background: #e5e5e5 url(../img/children.png) no-repeat;
+  background-position: left 8%;
+  padding: 10px;
 }
 div#comments > div#respond > div.formcontainer > div > div.uLogin_login {
   font: bold 18px "PT Sans Narrow";

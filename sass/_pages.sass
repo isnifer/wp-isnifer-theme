@@ -82,6 +82,7 @@ article.post, article.page
       color: #000
 
   > h2.add_comment
+    margin-left: 25px
 
     > a
       font: bold 24px "Lobster"
@@ -149,6 +150,71 @@ article.post, article.page
 div#comments
   font: 13px Arial
   font-style: italic
+
+  > div#comments-list
+
+    > ol
+
+      > li.comment
+        margin-bottom: 50px
+
+        > div.comment-author
+
+          > img.photo
+            width: 40px
+            height: 40px
+
+          > span
+            margin: -38px 0 0 50px
+            display: block
+
+        > div.comment-meta
+          margin: -3px 0 0 50px
+
+        > div.comment-content
+          margin: 5px 0 0 50px
+
+        > div.comment-reply-link
+          float: right
+          margin-right: 50px
+
+        > ul.children
+          +reset-ul
+          margin-top: 40px
+
+          > li
+            +reset-list
+            background: url(../img/children.png) no-repeat
+            background-position: left 8%
+            padding-left: 30px
+            margin-left: 50px
+
+            > div.comment-author
+
+              > img.photo
+                width: 40px
+                height: 40px
+
+              > span
+                margin: -38px 0 0 50px
+                display: block
+
+            > div.comment-meta
+              margin: -3px 0 0 50px
+
+            > div.comment-content
+              margin: 5px 0 0 50px
+
+            > div.comment-reply-link
+              float: right
+              margin-right: 50px
+
+            &.comment-author-admin
+              background: #e5e5e5 url(../img/children.png) no-repeat
+              background-position: left 8%
+              padding: 10px
+
+
 
   > div#respond
 
