@@ -64,7 +64,7 @@
           <footer class="post-meta-data">
             <ul class="no-bullet">
               <li>Опубликовано в <?php the_category(', ') ?></li>
-              <li>Метки: <?php the_tags('Tags: ', ', ', '<br />'); ?></li>
+              <li><?php the_tags('Метки: ', ', ', '<br />'); ?></li>
               <li><?php edit_post_link('Изменить', '<b class="edited_single_link">', '</b>'); ?></li>
             </ul>
           </footer>
