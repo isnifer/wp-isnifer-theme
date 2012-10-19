@@ -49,7 +49,7 @@
           <div class="entry-meta">
             Опубликовано
             <time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><a href="<?php the_permalink() ?>"><?php the_time('F jS, Y'); ?></a></time>
-            <span class="author-meta">автором <a href="/author/<?php the_author_link() ?>"><?php the_author() ?></a></span>
+            <span class="author-meta">автором <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author() ?></a></span>
           </div>
 
           <?php the_content('<button class="btn btn-info">Читать далее</button>'); ?>

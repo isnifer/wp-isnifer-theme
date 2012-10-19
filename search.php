@@ -56,7 +56,7 @@
 		<!--BEGIN: List Item-->
 			<a <?php post_class('ClearFix') ?> id="post-<?php the_ID(); ?>" href="<?php the_permalink() ?>" title="Click to read more...">
 			
-				<strong><?php the_title(); ?></strong>
+				<h2 class="search-post-header"><?php the_title(); ?></h2>
 
 				<!--BEGIN: Large Thumbnail-->
 				<?php $thumbLg = get_post_meta($post->ID, 'thumb_lg', $single = true); // if theres a thumbnail get it ?>
@@ -69,9 +69,9 @@
 				<!--END: Large Thumbnail-->
 				
 				<!--BEGIN: Excerpt-->
-				<span class="entry">
-					<?php the_excerpt("Continue reading &rarr;"); ?>
-				</span>
+				<div class="entry">
+					<?php the_excerpt("Продолжить чтение &rarr;"); ?>
+				</div>
 				<!--END: Excerpt-->
 						
 			</a>

@@ -66,6 +66,10 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox/jquery.fancybox.css" />
+  <!--link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox/helpers/jquery.fancybox-buttons.css" />
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox/helpers/jquery.fancybox-thumbs.css" /-->
+
 
 	<!--BEGIN: include iphone stylesheet-->
 	<?php if ($iphone == true) : ?>
@@ -78,12 +82,22 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/functions.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/modernizr_2_0_6_dev.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/jquery-1.7.2.min.js"></script>
+
+  <!-- Bootstrap -->
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/bootstrap.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/bootstrap-dropdown.js"></script>
+
+  <!-- Fancybox -->
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/jquery.mousewheel-3.0.6.pack.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/jquery.fancybox.pack.js"></script>
+  <!--script type="text/javascript" src="<?php bloginfo('template_url'); ?>/css/jquery.fancybox/helpers/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/css/jquery.fancybox/helpers/jquery.fancybox-media.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/css/jquery.fancybox/helpers/jquery.fancybox-thumbs.js"></script-->
 
   <script type="text/javascript">
     $(document).ready(function(){
       $('.dropdown-toggle').dropdown();
+      $("a[href$='.png'], a[href$='.jpg'], a[href$='.jpeg']").fancybox();
     })
   </script>
 

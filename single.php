@@ -52,7 +52,7 @@
           <header>
             <h1><?php the_title(); ?></h1>
             <time datetime="<?php the_time('c'); ?>" pubdate="pubdate"><?php the_time('F jS, Y'); ?></time>
-            <span class="author-meta">автором <a href="/author/<?php the_author_link() ?>"><?php the_author() ?></a></span>
+            <span class="author-meta">автором <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author() ?></a></span>
           </header>
 
           <div class="entry">
@@ -64,13 +64,13 @@
           <footer class="post-meta-data">
             <ul class="no-bullet">
               <li>Опубликовано в <?php the_category(', ') ?></li>
-              <li><?php edit_post_link('Изменить', '<small>', '</small>'); ?></li>
               <li>Метки: <?php the_tags('Tags: ', ', ', '<br />'); ?></li>
+              <li><?php edit_post_link('Изменить', '<b class="edited_single_link">', '</b>'); ?></li>
             </ul>
           </footer>
           <!--END: Post Meta Data-->
 
-          <h2><?php comments_popup_link('А Вы что думаете об этом?', '1 Comment', '% Comments'); ?></h2>
+          <h2 class="add_comment"><?php comments_popup_link('Выразить мнение', '1 комментарий', '% комментариев'); ?></h2>
           <?php comments_template( '', true ); ?>
 
         </article>
@@ -82,7 +82,7 @@
 
       <?php else: //ERROR: Nothing Found ?>
 
-        <h2>No posts were found :(</h2>
+        <h2>Постов не найдено :(</h2>
 
       <?php endif; ?>
 

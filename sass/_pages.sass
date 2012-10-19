@@ -1,6 +1,6 @@
 // On Single.php
 
-article.post
+article.post, article.page
   width: 100%
   margin-bottom: 30px
   padding: 20px
@@ -60,6 +60,36 @@ article.post
 
         &:hover
           text-decoration: none
+          color: #333
+
+  > footer.post-meta-data
+
+    > ul
+
+      > li
+
+        > b.edited_single_link
+          font: bold 13px Arial
+          font-style: italic
+
+          > a
+            color: #888
+
+  > h2.archive_header
+
+    > a
+      font: bold 28px "PT Sans Narrow"
+      color: #000
+
+  > h2.add_comment
+
+    > a
+      font: bold 24px "Lobster"
+      color: #000
+      border-bottom: 1px dotted #333
+
+      &:hover
+        text-decoration: none
 
 // Search page
 
@@ -68,8 +98,72 @@ article.post
   > h1.search-header
     font: bold 30px "Lobster"
 
+  > section.posts
+
+    > h1.category-header
+      margin: 0px 0 20px 0
+      padding: 0
+      font-family: "Lobster", sans-serif
+      font-size: 30px
+
+    > div.search-result-item
+      border-bottom: 1px dotted #333
+      padding-bottom: 10px
+      margin-bottom: 10px
+
+      > a.post
+        text-decoration: none
+
+        > h2.search-post-header
+          font: bold 26px "PT Sans Narrow"
+          color: #333
+
+          &:hover
+            text-decoration: underline
+
+        > div.entry
+          cursor: default
+          font: 16px Arial
+          color: #333
+
+    > .navigation
+      margin-top: 20px
+      font: bold 22px "PT Sans Narrow"
+      font-style: italic
+      width: inherit
+      margin: 0 auto
+
+      > a
+        color: #333
+
+        > div
+
+          &:hover
+            text-decoration: underline
+
+
+
 
 // Comments.php
+
+div#comments
+  font: 13px Arial
+  font-style: italic
+
+  > div#respond
+
+    > div.formcontainer
+
+      > div
+
+        > div.uLogin_login
+          font: bold 18px "PT Sans Narrow"
+          line-height: 28px
+
+      > form#commentform
+
+        > p#comment-notes
+          margin-top: 10px
 
 div.form-label
   width: 70px
@@ -78,7 +172,8 @@ div.form-label
 
   > label
     float: left
-    margin-right: 2px
+    margin: 0 2px 5px 0
+    font: bold 20px "PT Sans Narrow"
 
   > span.required
     color: red
@@ -88,3 +183,16 @@ div.form-submit
   > input[type="submit"]
     margin-left: 155px
 
+div.form-section
+
+  > div.form-textarea
+
+    > textarea
+      width: 98%
+      margin-top: 10px
+
+div.form-submit
+
+  > input#submit
+    float: right
+    margin-right: 3px

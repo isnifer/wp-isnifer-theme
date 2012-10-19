@@ -16,7 +16,7 @@ http://ponderwell.net/2010/07/html5-forms-and-wp-3-0-comments/
         if ( $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password ) :
 ?>
 
-	<div class="nopassword"><?php _e('This post is password protected. Enter the password to view any comments.', 'your-theme') ?></div>
+	<div class="nopassword"><?php _e('Эта заметка защищена паролем. Введите пароль, чтобы увидеть комментарии.', 'your-theme') ?></div>
 
 	</div><!-- .comments -->
 
@@ -38,7 +38,7 @@ foreach ( $comments as $comment )
 <?php if ( ! empty($comments_by_type['comment']) ) : ?>
  
 	<div id="comments-list" class="comments">
-	<h3><?php printf($comment_count > 1 ? __('<span>%d</span> Comments', 'your-theme') : __('<span>One</span> Comment', 'your-theme'), $comment_count) ?></h3>
+	<h3><?php printf($comment_count > 1 ? __('<span>%d</span> комментария (-ев)', 'your-theme') : __('<span>Один</span> комментарий', 'your-theme'), $comment_count) ?></h3>
  
 <?php /* If there are enough comments, build the comment navigation  */ ?>
 <?php $total_pages = get_comment_pages_count(); if ( $total_pages > 1 ) : ?>
@@ -68,7 +68,7 @@ foreach ( $comments as $comment )
 <?php if ( ! empty($comments_by_type['pings']) ) : ?>
 	
 	<div id="trackbacks-list" class="comments">
-		<h3><?php printf($ping_count > 1 ? __('<span>%d</span> Trackbacks', 'your-theme') : __('<span>One</span> Trackback', 'your-theme'), $ping_count) ?></h3>
+		<h3><?php printf($ping_count > 1 ? __('<span>%d</span> Отклики', 'your-theme') : __('<span>Один</span> Trackback', 'your-theme'), $ping_count) ?></h3>
  
 		<?php /* An ordered list of our custom trackbacks callback, custom_pings(), in functions.php   */ ?>
 		<ol>
@@ -82,12 +82,10 @@ foreach ( $comments as $comment )
 <?php /* If comments are open, build the respond form */ ?>
 <?php if ( 'open' == $post->comment_status ) : ?>
                 <div id="respond">
-                    <h3><?php comment_form_title( __('Я думаю, что...', 'your-theme'), __('Post a Reply to %s', 'your-theme') ); ?></h3>
- 
                     <div id="cancel-comment-reply"><?php cancel_comment_reply_link() ?></div>
  
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-                    <p id="login-req"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'your-theme'),
+                    <p id="login-req"><?php printf(__('Вы должны быть <a href="%s" title="Log in">авторизованы</a> для комментирования.', 'your-theme'),
                     get_option('siteurl') . '/wp-login.php?redirect_to=' . get_permalink() ) ?></p>
  
 <?php else : ?>

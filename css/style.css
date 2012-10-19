@@ -5161,6 +5161,18 @@ a:visited {
   color: #743399;
 }
 
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignnone {
+  float: none;
+}
+
 code {
   background-color: #2a410b !important;
   font-family: "Andale Mono", "Lucida Console", "courier new", courier, monospace;
@@ -5452,7 +5464,7 @@ html, body {
 
 #content {
   margin: 20px auto 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 31px;
   width: 100%;
   height: auto;
 }
@@ -5631,9 +5643,9 @@ html, body {
 #footer {
   position: absolute;
   bottom: 0;
-  margin: 10px 0 0 -10px;
+  margin: -10px 0 0 -10px;
   background: #d6d6d6;
-  height: 21px;
+  height: 31px;
   width: 100%;
   text-align: center;
 }
@@ -5647,7 +5659,7 @@ section.modal {
   display: none;
 }
 
-article.post {
+article.post, article.page {
   width: 100%;
   margin-bottom: 30px;
   padding: 20px;
@@ -5655,29 +5667,29 @@ article.post {
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
-article.post > header > h1 {
+article.post > header > h1, article.page > header > h1 {
   margin: -10px 0 0 0;
   padding: 0;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 30px;
 }
-article.post > header > time, article.post > header span {
+article.post > header > time, article.post > header span, article.page > header > time, article.page > header span {
   color: #888888;
 }
-article.post > header > time > a, article.post > header span > a {
+article.post > header > time > a, article.post > header span > a, article.page > header > time > a, article.page > header span > a {
   color: #888888;
   text-decoration: underline;
 }
-article.post > header > time > a:hover, article.post > header span > a:hover {
+article.post > header > time > a:hover, article.post > header span > a:hover, article.page > header > time > a:hover, article.page > header span > a:hover {
   color: #454242;
 }
-article.post > header > time > a:active, article.post > header span > a:active {
+article.post > header > time > a:active, article.post > header span > a:active, article.page > header > time > a:active, article.page > header span > a:active {
   color: #706e6e;
 }
-article.post > div.entry {
+article.post > div.entry, article.page > div.entry {
   margin-top: 10px;
 }
-article.post > div.entry > div.wp-caption {
+article.post > div.entry > div.wp-caption, article.page > div.entry > div.wp-caption {
   background: #f1f1f1;
   line-height: 18px;
   padding: 8px 5px 0;
@@ -5685,30 +5697,101 @@ article.post > div.entry > div.wp-caption {
   float: left;
   margin: 0 10px 10px 0;
 }
-article.post > div.entry > div.wp-caption.alignnone {
+article.post > div.entry > div.wp-caption.alignnone, article.page > div.entry > div.wp-caption.alignnone {
   float: none;
 }
-article.post > div.entry > div.wp-caption.alignleft {
+article.post > div.entry > div.wp-caption.alignleft, article.page > div.entry > div.wp-caption.alignleft {
   float: left;
 }
-article.post > div.entry > div.wp-caption.alignright {
+article.post > div.entry > div.wp-caption.alignright, article.page > div.entry > div.wp-caption.alignright {
   float: right;
 }
-article.post > div.entry > p {
+article.post > div.entry > p, article.page > div.entry > p {
   font-family: Georgia, "PT Sans Narrow", Arial;
   font-size: 16px;
   line-height: 24px;
 }
-article.post > div.entry > p > a.more-link {
+article.post > div.entry > p > a.more-link, article.page > div.entry > p > a.more-link {
   float: right;
   text-decoration: none;
 }
-article.post > div.entry > p > a.more-link:hover {
+article.post > div.entry > p > a.more-link:hover, article.page > div.entry > p > a.more-link:hover {
+  text-decoration: none;
+  color: #333333;
+}
+article.post > footer.post-meta-data > ul > li > b.edited_single_link, article.page > footer.post-meta-data > ul > li > b.edited_single_link {
+  font: bold 13px Arial;
+  font-style: italic;
+}
+article.post > footer.post-meta-data > ul > li > b.edited_single_link > a, article.page > footer.post-meta-data > ul > li > b.edited_single_link > a {
+  color: #888888;
+}
+article.post > h2.archive_header > a, article.page > h2.archive_header > a {
+  font: bold 28px "PT Sans Narrow";
+  color: black;
+}
+article.post > h2.add_comment > a, article.page > h2.add_comment > a {
+  font: bold 24px "Lobster";
+  color: black;
+  border-bottom: 1px dotted #333333;
+}
+article.post > h2.add_comment > a:hover, article.page > h2.add_comment > a:hover {
   text-decoration: none;
 }
 
 #content > h1.search-header {
   font: bold 30px "Lobster";
+}
+#content > section.posts > h1.category-header {
+  margin: 0px 0 20px 0;
+  padding: 0;
+  font-family: "Lobster", sans-serif;
+  font-size: 30px;
+}
+#content > section.posts > div.search-result-item {
+  border-bottom: 1px dotted #333333;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+#content > section.posts > div.search-result-item > a.post {
+  text-decoration: none;
+}
+#content > section.posts > div.search-result-item > a.post > h2.search-post-header {
+  font: bold 26px "PT Sans Narrow";
+  color: #333333;
+}
+#content > section.posts > div.search-result-item > a.post > h2.search-post-header:hover {
+  text-decoration: underline;
+}
+#content > section.posts > div.search-result-item > a.post > div.entry {
+  cursor: default;
+  font: 16px Arial;
+  color: #333333;
+}
+#content > section.posts > .navigation {
+  margin-top: 20px;
+  font: bold 22px "PT Sans Narrow";
+  font-style: italic;
+  width: inherit;
+  margin: 0 auto;
+}
+#content > section.posts > .navigation > a {
+  color: #333333;
+}
+#content > section.posts > .navigation > a > div:hover {
+  text-decoration: underline;
+}
+
+div#comments {
+  font: 13px Arial;
+  font-style: italic;
+}
+div#comments > div#respond > div.formcontainer > div > div.uLogin_login {
+  font: bold 18px "PT Sans Narrow";
+  line-height: 28px;
+}
+div#comments > div#respond > div.formcontainer > form#commentform > p#comment-notes {
+  margin-top: 10px;
 }
 
 div.form-label {
@@ -5718,7 +5801,8 @@ div.form-label {
 }
 div.form-label > label {
   float: left;
-  margin-right: 2px;
+  margin: 0 2px 5px 0;
+  font: bold 20px "PT Sans Narrow";
 }
 div.form-label > span.required {
   color: red;
@@ -5726,6 +5810,16 @@ div.form-label > span.required {
 
 div.form-submit > input[type="submit"] {
   margin-left: 155px;
+}
+
+div.form-section > div.form-textarea > textarea {
+  width: 98%;
+  margin-top: 10px;
+}
+
+div.form-submit > input#submit {
+  float: right;
+  margin-right: 3px;
 }
 
 @media screen and (max-width: 1200px) {
