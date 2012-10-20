@@ -5473,8 +5473,7 @@ html, body {
   margin: 0 10px 0 0;
   padding: 19px;
   background: white;
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0px 1px #575757, 0px 1px 1px #757575, 2px 1px 1px #575757, 1px 2px 1px #757575, 3px 2px 1px #575757, 2px 3px 1px #757575, 4px 3px 1px #575757, 3px 4px 1px #757575, 5px 4px 1px #575757, 4px 5px 1px #757575, 6px 5px 1px #575757;
   width: 210px;
   height: 210px;
 }
@@ -5499,8 +5498,7 @@ html, body {
   margin: 270px -248px 0 0;
   padding: 19px;
   background: white;
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0px 1px #575757, 0px 1px 1px #757575, 2px 1px 1px #575757, 1px 2px 1px #757575, 3px 2px 1px #575757, 2px 3px 1px #757575, 4px 3px 1px #575757, 3px 4px 1px #757575, 5px 4px 1px #575757, 4px 5px 1px #757575, 6px 5px 1px #575757;
   width: 210px;
   height: auto;
 }
@@ -5536,8 +5534,7 @@ html, body {
   margin-bottom: 30px;
   padding: 5px 20px;
   background: white;
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0px 1px #575757, 0px 1px 1px #757575, 2px 1px 1px #575757, 1px 2px 1px #757575, 3px 2px 1px #575757, 2px 3px 1px #757575, 4px 3px 1px #575757, 3px 4px 1px #757575, 5px 4px 1px #575757, 4px 5px 1px #757575, 6px 5px 1px #575757;
 }
 #content > section.posts > div.post-block > article.blogpost {
   width: 100%;
@@ -5685,8 +5682,7 @@ article.post, article.page {
   margin-bottom: 30px;
   padding: 20px;
   background: white;
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0px 1px #575757, 0px 1px 1px #757575, 2px 1px 1px #575757, 1px 2px 1px #757575, 3px 2px 1px #575757, 2px 3px 1px #757575, 4px 3px 1px #575757, 3px 4px 1px #757575, 5px 4px 1px #575757, 4px 5px 1px #757575, 6px 5px 1px #575757;
 }
 article.post > header > h1, article.page > header > h1 {
   margin: -10px 0 0 0;

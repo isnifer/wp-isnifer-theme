@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84b28b29-6108-40db-98f0-129870f07146" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7fbbdc869037ab5411406a5885625b9379fc7f2c/_pages.sassc" afterPath="$PROJECT_DIR$/.sass-cache/7fbbdc869037ab5411406a5885625b9379fc7f2c/_pages.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/7fbbdc869037ab5411406a5885625b9379fc7f2c/_structure.sassc" afterPath="$PROJECT_DIR$/.sass-cache/7fbbdc869037ab5411406a5885625b9379fc7f2c/_structure.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_pages.sass" afterPath="$PROJECT_DIR$/sass/_pages.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_structure.sass" afterPath="$PROJECT_DIR$/sass/_structure.sass" />
     </list>
     <list id="e83a853f-1bec-48b2-bdea-846a3e1008aa" name="Rejected commit: Default" comment="Base files added" />
@@ -27,19 +28,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_structure.sass" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_structure.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/_structure.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="446" column="27" selection-start="8461" selection-end="8461" vertical-scroll-proportion="0.28421053">
+            <state line="380" column="237" selection-start="7514" selection-end="7514" vertical-scroll-proportion="-3.76">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pages.sass" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_pages.sass" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/_pages.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="16" selection-start="4691" selection-end="5397" vertical-scroll-proportion="0.0">
+            <state line="7" column="233" selection-start="352" selection-end="352" vertical-scroll-proportion="0.22857143">
               <folding />
             </state>
           </provider>
@@ -150,9 +151,9 @@
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/single.php" />
-        <option value="$PROJECT_DIR$/sass/_pages.sass" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sass/_structure.sass" />
+        <option value="$PROJECT_DIR$/sass/_pages.sass" />
       </list>
     </option>
   </component>
@@ -330,7 +331,11 @@
       <created>1350762208837</created>
       <updated>1350762208837</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="some-fixes">
+      <created>1350762846969</created>
+      <updated>1350762846969</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -524,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_pages.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="16" selection-start="4691" selection-end="5397" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="56" selection-start="2291" selection-end="2303" vertical-scroll-proportion="-3.9230769">
@@ -540,7 +538,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_structure.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="446" column="27" selection-start="8461" selection-end="8461" vertical-scroll-proportion="0.28421053">
+        <state line="380" column="237" selection-start="7514" selection-end="7514" vertical-scroll-proportion="-3.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_pages.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="233" selection-start="352" selection-end="352" vertical-scroll-proportion="0.22857143">
           <folding />
         </state>
       </provider>
