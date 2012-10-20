@@ -52,7 +52,7 @@
             <span class="author-meta">автором <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author() ?></a></span>
           </div>
 
-          <?php the_content('<button class="btn btn-info">Читать далее</button>'); ?>
+          <?php the_content('<button class="readit-later">Читать далее</button>'); ?>
 
         </article>
 

@@ -5595,6 +5595,27 @@ html, body {
 #content > section.posts > div.post-block > article.blogpost > p > a.more-link:hover {
   text-decoration: none;
 }
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link {
+  margin-right: 20px;
+}
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link > button.readit-later {
+  border: 0;
+  display: block;
+  color: white;
+  padding: 5px;
+  background: #4eadc7;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91, 2px 3px 1px #38a1b1, 4px 3px 1px #208f91, 3px 4px 1px #38a1b1, 5px 4px 1px #208f91, 4px 5px 1px #38a1b1, 6px 5px 1px #208f91;
+}
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link > button.readit-later:hover {
+  text-decoration: none;
+  background: #3daeb4;
+}
+#content > section.posts > div.post-block > article.blogpost > p > a.more-link > button.readit-later:active {
+  position: relative;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91;
+  top: 3px;
+  left: 3px;
+}
 #content > div.pagination {
   margin: 10px 0 0 10px;
 }
