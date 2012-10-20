@@ -5828,7 +5828,7 @@ div#comments > div#comments-list > ol > li.comment > div.comment-reply-link > a.
   left: 3px;
 }
 div#comments > div#comments-list > ol > li.comment.comment-author-admin {
-  background: #e5e5e5;
+  background: white;
   padding: 10px 10px 30px 10px;
 }
 div#comments > div#comments-list > ol > li.comment.comment-author-admin > div.comment-reply-link {
