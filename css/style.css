@@ -5829,7 +5829,7 @@ div#comments > div#comments-list > ol > li.comment > div.comment-reply-link > a.
 }
 div#comments > div#comments-list > ol > li.comment.comment-author-admin {
   background: #e5e5e5;
-  padding: 10px 10px 10px 40px;
+  padding: 10px 10px 30px 10px;
 }
 div#comments > div#comments-list > ol > li.comment.comment-author-admin > div.comment-reply-link {
   float: right;
@@ -5888,7 +5888,7 @@ div#comments > div#comments-list > ol > li.comment > ul.children > li > div.comm
   left: 3px;
 }
 div#comments > div#comments-list > ol > li.comment > ul.children > li.comment-author-admin {
-  background: #e5e5e5 url(../img/children.png) no-repeat;
+  background: url(../img/children.png) no-repeat;
   background-position: 1% 18%;
   padding: 10px 10px 10px 40px;
 }

@@ -67,6 +67,8 @@
               <li><?php the_tags('Метки: ', ', ', '<br />'); ?></li>
               <li><?php edit_post_link('Изменить', '<b class="edited_single_link">', '</b>'); ?></li>
             </ul>
+            <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+            <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,lj,gplus,surfingbird" style="margin-left: 19px;"></div>
           </footer>
           <!--END: Post Meta Data-->
 

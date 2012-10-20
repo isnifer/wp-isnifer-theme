@@ -5,7 +5,7 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 
 <!DOCTYPE html>
 
-<html <?php language_attributes(); ?> class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+<html <?php language_attributes(); ?> class="no-js" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Lobster&subset=cyrillic' rel='stylesheet'>
@@ -31,28 +31,6 @@ $ipad = strpos($_SERVER['HTTP_USER_AGENT'],"iPad");
 		if ( $paged >= 2 || $page >= 2 )
 			echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 		?></title>
-
-	<!-- BEGIN: Open Graph meta tags for Facebook...  Add in your App ID and or Admins here -->
-    <meta property="fb:app_id" content="your_app_id" />
-    <meta property="fb:admins" content="your_admin_id" />
-
-	<meta property="og:title" content="<?php global $page, $paged; wp_title( '|', true, 'right' ); bloginfo( 'name' );/* Add a page number if necessary: */if ( $paged >= 2 || $page >= 2 ) echo ' | ' . sprintf( __( 'Page %s', '' ), max( $paged, $page ) ); ?>" />
-    <meta property="og:url" content="<?php the_permalink() ?>"/>
-
-	<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-
-	<?php if (is_single() || is_page()): ?>
-	    <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
-	    <meta property="og:type" content="article" />
-
-		<?php if (function_exists('get_the_image')) $imgArray = get_the_image(array('format' => 'array')); //get the image array ?>
-		<meta property="og:image" content="<?php if($imgArray != null) echo $imgArray[src]; else echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ) ?>" />
-
-	<?php else: ?>
-	    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
-	    <meta property="og:type" content="website" />
-	    <meta property="og:image" content="<?php bloginfo('template_url') ?>/path/to-your/logo.jpg" />
-	<?php endif; ?>
 
 	<!--END: Open Graph facebook tags-->
 
