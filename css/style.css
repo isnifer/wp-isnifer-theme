@@ -5614,29 +5614,15 @@ html, body {
   left: 3px;
 }
 #content > div.pagination {
-  margin: 10px 0 0 10px;
-}
-#content > div.pagination > span.pages {
-  border-left-width: 1px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  margin: -5px 0 20px 10px;
 }
 #content > div.pagination > a, #content > div.pagination span {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #49afcd;
-  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
-  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
-  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0);
-  border-color: #2f96b4 #2f96b4 #1f6377;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
-  *background-color: #2f96b4;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 0;
+  background: #4eadc7;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91, 2px 3px 1px #38a1b1, 4px 3px 1px #208f91, 3px 4px 1px #38a1b1, 5px 4px 1px #208f91, 4px 5px 1px #38a1b1, 6px 5px 1px #208f91;
 }
 #content > div.pagination > a:hover, #content > div.pagination span:hover {
   color: white;
@@ -5649,23 +5635,32 @@ html, body {
 }
 #content > div.pagination > a:active, #content > div.pagination > a.current, #content > div.pagination span:active, #content > div.pagination span.current {
   background-color: #24748c \9;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 7px 15px rgba(0, 0, 0, 0.25), 0 7px 10px rgba(0, 0, 0, 0.05), 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91, 2px 3px 1px #38a1b1, 4px 3px 1px #208f91, 3px 4px 1px #38a1b1, 5px 4px 1px #208f91, 4px 5px 1px #38a1b1, 6px 5px 1px #208f91;
 }
-#content > div.pagination > a.next {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+#content > div.pagination > a.pages, #content > div.pagination span.pages {
+  background: #4eadc7;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91, 2px 3px 1px #38a1b1, 4px 3px 1px #208f91, 3px 4px 1px #38a1b1, 5px 4px 1px #208f91, 4px 5px 1px #38a1b1, 6px 5px 1px #208f91;
+}
+#content > div.pagination > a.pages:hover, #content > div.pagination > a.pages:active, #content > div.pagination span.pages:hover, #content > div.pagination span.pages:active {
+  background: #4eadc7;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91, 2px 3px 1px #38a1b1, 4px 3px 1px #208f91, 3px 4px 1px #38a1b1, 5px 4px 1px #208f91, 4px 5px 1px #38a1b1, 6px 5px 1px #208f91;
+}
+#content > div.pagination > a.next:active, #content > div.pagination span.next:active {
+  position: relative;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91;
+  top: 3px;
+  left: 3px;
 }
 
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   margin: -10px 0 0 -10px;
   background: #d6d6d6;
   height: 31px;
   width: 100%;
   text-align: center;
+  box-shadow: 1px 0px 1px #575757, 0px 1px 1px #757575, 2px 1px 1px #575757, 1px 2px 1px #757575, 3px 2px 1px #575757, 2px 3px 1px #757575, 4px 3px 1px #575757, 3px 4px 1px #757575, 5px 4px 1px #575757, 4px 5px 1px #757575, 6px 5px 1px #575757;
 }
 #footer > span.copyright {
   font-family: "PT Sans Narrow";
@@ -5935,18 +5930,33 @@ div.form-label > span.required {
   color: red;
 }
 
-div.form-submit > input[type="submit"] {
-  margin-left: 155px;
+div.form-submit {
+  padding-bottom: 20px;
+}
+div.form-submit > input.send-comment {
+  float: right;
+  margin-right: 10px;
+  display: block;
+  border: 0;
+  color: white;
+  padding: 5px;
+  background: #4eadc7;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91, 2px 3px 1px #38a1b1, 4px 3px 1px #208f91, 3px 4px 1px #38a1b1, 5px 4px 1px #208f91, 4px 5px 1px #38a1b1, 6px 5px 1px #208f91;
+}
+div.form-submit > input.send-comment:hover {
+  text-decoration: none;
+  background: #3daeb4;
+}
+div.form-submit > input.send-comment:active {
+  position: relative;
+  box-shadow: 1px 0px 1px #208f91, 0px 1px 1px #38a1b1, 2px 1px 1px #208f91, 1px 2px 1px #38a1b1, 3px 2px 1px #208f91;
+  top: 3px;
+  left: 3px;
 }
 
 div.form-section > div.form-textarea > textarea {
   width: 98%;
   margin-top: 10px;
-}
-
-div.form-submit > input#submit {
-  float: right;
-  margin-right: 3px;
 }
 
 @media screen and (max-width: 1200px) {

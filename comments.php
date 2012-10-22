@@ -128,7 +128,7 @@ foreach ( $comments as $comment )
  
 <?php do_action('comment_form', $post->ID); ?>
  
-                            <div class="form-submit"><input id="submit" name="submit" type="submit" value="<?php _e('Запилить коммент', 'your-theme') ?>" tabindex="7" class="btn btn-info" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></div>
+                            <div class="form-submit"><input id="submit" name="submit" type="submit" value="<?php _e('Запилить коммент', 'your-theme') ?>" tabindex="7" class="send-comment" /><input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" /></div>
  
 <?php comment_id_fields(); ?> 
  
