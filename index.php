@@ -27,6 +27,11 @@
           </ul>
         </aside>
 
+        <aside id="tag">
+          <h3 class="widget-title"><?php _e( 'Метки', 'new-style' ); ?></h3>
+          <?php wp_tag_cloud('smallest=8&largest=22'); ?>
+        </aside>
+
         <aside id="meta" class="widget">
           <h3 class="widget-title"><?php _e( 'Авторизация', 'new-style' ); ?></h3>
           <ul>

@@ -5521,7 +5521,7 @@ html, body {
   background-position: left;
   text-indent: 20px;
 }
-#content > section.sidebar > div.widget-area > aside > ul > li > a {
+#content > section.sidebar > div.widget-area > aside a {
   color: #333333;
 }
 #content > section.posts {
