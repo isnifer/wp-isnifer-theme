@@ -2,7 +2,7 @@
 
 <div id="container">
   <header id="header">
-
+    <img src="<?php bloginfo('template_url'); ?>/img/bat.svg" class="batman" alt="Bat">
   </header>
   <div id="content">
     <section class="findme">

@@ -5461,6 +5461,10 @@ html, body {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+#header > img.batman {
+  height: 210px;
+  margin-top: -30px;
+}
 
 #content {
   margin: 20px auto 0 auto;
