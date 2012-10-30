@@ -5619,6 +5619,7 @@ html, body {
 }
 #content > div.pagination {
   margin: -5px 0 20px 10px;
+  width: 320px;
 }
 #content > div.pagination > a, #content > div.pagination span {
   color: white;
